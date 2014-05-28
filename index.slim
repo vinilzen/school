@@ -21,82 +21,111 @@ html
           .col-md-5.col-lg-5.text-right.hidden-sm.hidden-xs
             a.button.btn-green Электронный журнал
         .clearfix
-        ul.nav.nav-justified
-          li
-            a href="#" о школе
-          li.active.dropdown
-            a.dropdown-toggle id="dropdownMenu1" data-toggle="dropdown" href="#"
-              | Начальная школа "Радуга" 
-              span.caret
-            ul.dropdown-menu role="menu" aria-labelledby="dropdownMenu1"
-              li
-                a О школе
-              li
-                a Лица
-              li
-                a Образование
-                ul.menu-lvl2
-                  li
-                    a Базовое образование
-                  li
-                    a Специальные программы
-                  li.dropdown-submenu
-                    a.dropdown-toggle id="dropdownMenu2" data-toggle="dropdown" href="#" Выездная школа
-                    ul.dropdown-menu role="menu" aria-labelledby="dropdownMenu2"
-                      li
-                        a Жить здОрово - здорОво
-                      li
-                        a Школьная академия наук искусств и интересов (ШАНИиИ)
-                      li
-                        a Языковое образование
-                      li
-                        a Социальный интеллект
-              li
-                a Студии и лекции
-              li
-                a школьная жизнь
-                ul.menu-lvl2
-                  li
-                    a href="#" Новости
-                  li
-                    a href="#" СМИ школы
-                  li.dropdown-submenu
-                    a.dropdown-toggle id="dropdownMenu2" data-toggle="dropdown" href="#" Страницы центров
-                    ul.dropdown-menu role="menu" aria-labelledby="dropdownMenu2"
-                      li
-                        a Жить здОрово - здорОво
-                      li
-                        a Школьная академия наук искусств и интересов (ШАНИиИ)
-                      li
-                        a Языковое образование
-                      li
-                        a Социальный интеллект
+        .nav-sm.visible-sm.visible-xs
+          button.navbar-toggle.pull-left data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" 
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.button.btn-black Электронный журнал
+        .collapse.navbar-collapse#bs-example-navbar-collapse-1
+          ul.nav.nav-justified
+            li
+              a href="#" о школе
+            li.active.dropdown#dropdownMenu1
+              a.dropdown-toggle data-toggle="dropdown" href="#"
+                | Начальная школа "Радуга" 
+                span.caret
+              ul.dropdown-menu role="menu" aria-labelledby="dropdownMenu1"
+                li
+                  a О школе
+                li
+                  a Лица
+                li
+                  a Образование
+                  ul.menu-lvl2
+                    li
+                      a Базовое образование
+                    li
+                      a Специальные программы
+                    li.dropdown-submenu
+                      a.dropdown-toggle id="dropdownMenu2" data-toggle="dropdown" href="#" Выездная школа
+                      ul.dropdown-menu role="menu" aria-labelledby="dropdownMenu2"
+                        li
+                          a Жить здОрово - здорОво
+                        li
+                          a Школьная академия наук искусств и интересов (ШАНИиИ)
+                        li
+                          a Языковое образование
+                        li
+                          a Социальный интеллект
+                li
+                  a Студии и лекции
+                li
+                  a школьная жизнь
+                  ul.menu-lvl2
+                    li
+                      a href="#" Новости
+                    li
+                      a href="#" СМИ школы
+                    li.dropdown-submenu
+                      a.dropdown-toggle id="dropdownMenu2" data-toggle="dropdown" href="#" Страницы центров
+                      ul.dropdown-menu role="menu" aria-labelledby="dropdownMenu2"
+                        li
+                          a Жить здОрово - здорОво
+                        li
+                          a Школьная академия наук искусств и интересов (ШАНИиИ)
+                        li
+                          a Языковое образование
+                        li
+                          a Социальный интеллект
 
-          li
-            a href="#"  образование
-          li
-            a href="#"  Школьная Жизнь
-          li
-            a href="#"  Выпускники
-          li
-            a href="#"  Условия приема
-          li
-            a href="#"  Контакты
-          li.hidden-md
-            a href="#"  Условия приема
+            li
+              a href="#"  образование
+            li
+              a href="#"  Школьная Жизнь
+            li
+              a href="#"  Выпускники
+            li
+              a href="#"  Условия приема
+            li
+              a href="#"  Контакты
+            li.hidden-md
+              a href="#"  Условия приема
 
     .container.photo-container
       .row
-        .col-lg-7.col-md-8.col-sm-8.col-xs-12.img-left
-          img.img-responsive src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image"
+        .col-lg-7.col-md-8.col-sm-8.col-xs-12.img-left#bigpic1
+          img.img-responsive src="img/pic44.jpg"
+          a.btn.btn-transporent Начальная школа
+          .text-placeholder
+            span.date 1 апреля
+            a
+              h2 Родительское собрание
         .col-lg-5.col-md-4.col-sm-4.img-right.hidden-xs
           .row
-            .col-lg-12.visible-lg
-              img.img-responsive.img-left-padding src="http://dummyimage.com/800x550/4d494d/686a82.gif&text=placeholder+image"
-            .col-lg-6.col-md-12.col-sm-12
+            .col-lg-12.visible-lg#bigpic2
+              img.img-responsive.img-left-padding src="img/img33.jpg"
+              a.btn.btn-transporent Старшая школа
+              .text-placeholder
+                span.date 22 марта
+                a
+                  h2 100 вопросов профессионалу
+            .col-lg-6.col-md-12.col-sm-12#bigpic3
+              img.img-responsive.img-left-padding.img-top-padding src="img/pic22.jpg"
+              a.btn.btn-transporent Средняя школа
+              .text-placeholder
+                span.date 20 марта
+                a
+                a
+                  h2 Литературные чтения с Павлом Любимцевым
+            .col-lg-6.col-md-12.col-sm-12#bigpic4
               img.img-responsive.img-left-padding.img-top-padding src="http://dummyimage.com/400x293/4d494d/686a82.gif&text=placeholder+image"
-            .col-lg-6.col-md-12.col-sm-12
-              img.img-responsive.img-left-padding.img-top-padding src="http://dummyimage.com/400x293/4d494d/686a82.gif&text=placeholder+image"
+                a.btn.btn-transporent Начальная школа
+                .text-placeholder
+                  span.date 18 марта
+                  a
+                    h2 Выездная образовательная
 
     .container
       .row.row-bordered
@@ -118,23 +147,27 @@ html
           .row
             .col-lg-6
               .thumbnail
-                img src="http://dummyimage.com/216x136/4d494d/686a82.gif&text=placeholder+image"
+                a
+                  img src="http://dummyimage.com/216x136/4d494d/686a82.gif&text=placeholder+image"
                 .caption
-                  h3 Испания "Я сам -2014"
+                  a
+                    h3 Испания "Я сам -2014"
                   p
                     small 24 марта 2014
             .col-lg-6.visible-lg
               .thumbnail
-                img src="http://dummyimage.com/216x136/4d494d/686a82.gif&text=placeholder+image"
+                a
+                  img src="http://dummyimage.com/216x136/4d494d/686a82.gif&text=placeholder+image"
                 .caption
-                  h3 Пушкин ad libitum
+                  a
+                    h3 Пушкин ad libitum
                   p
                     small 23 марта 2014
             .col-md-12.column
               a Все анонсы
 
 
-        .clearfix
+      .row.row-bordered
 
         .col-lg-4.col-md-12.col-bordered
           h1.title-hdr Начальная школа «Радуга»
@@ -144,28 +177,32 @@ html
                 img.media-object alt="..." src="http://placehold.it/205x130" 
               .media-body
                 p.date 19 марта 2014
-                h4.media-heading Экскурсия в музей Москвы
+                a
+                  h4.media-heading Экскурсия в музей Москвы
             li.media.col-md-3.col-lg-12.col-sm-4
               a.pull-left href="#" 
                 img.media-object alt="..." src="http://placehold.it/205x130" 
               .media-body
                 p.date 18 марта 2014
-                h4.media-heading Второй тур игры «Поток»
+                a
+                  h4.media-heading Второй тур игры «Поток»
             li.media.col-md-3.col-lg-12.col-sm-4.hidden-lg
               a.pull-left href="#" 
                 img.media-object alt="..." src="http://placehold.it/205x130" 
               .media-body
                 p.date 14 марта 2014
-                h4.media-heading Образовательная программа в Великобритании
+                a
+                  h4.media-heading Образовательная программа в Великобритании
             li.media.col-md-3.col-lg-12.hidden-sm.hidden-lg
               a.pull-left href="#" 
                 img.media-object alt="..." src="http://placehold.it/205x130" 
               .media-body
                 p.date 14 марта 2014
-                h4.media-heading Великобритании программа в тельная
+                a
+                  h4.media-heading Великобритании программа в тельная
             
           .clearfix
-            a Все новости начальной школы
+            a.all-link Все новости начальной школы
 
         .col-lg-4.col-md-12.col-bordered
           h1.title-hdr Средняя школа
@@ -175,21 +212,24 @@ html
                 img.media-object alt="..." src="http://placehold.it/205x130" 
               .media-body
                 p.date 16 марта 2014
-                h4.media-heading Экскурсия в музей «Огни Москвы»
+                a
+                  h4.media-heading Экскурсия в музей «Огни Москвы»
             li.media.col-md-3.col-lg-12.col-sm-4
               a.pull-left href="#" 
                 img.media-object alt="..." src="http://placehold.it/205x130" 
               .media-body
                 p.date 10 марта 2014
-                h4.media-heading Второй тур игры «Поток»
+                a
+                  h4.media-heading Второй тур игры «Поток»
             li.media.col-md-3.col-lg-12.col-sm-4
               a.pull-left href="#" 
                 img.media-object alt="..." src="http://placehold.it/205x130" 
               .media-body
                 p.date 8 марта 2014
-                h4.media-heading Образовательная программа
+                a
+                  h4.media-heading Образовательная программа
           .clearfix
-            a Все новости начальной школы
+            a.all-link Все новости начальной школы
 
         .col-lg-4.col-md-12.col-bordered
           h1.title-hdr Старшая школа
@@ -199,22 +239,30 @@ html
                 img.media-object alt="..." src="http://placehold.it/205x130" 
               .media-body
                 p.date 16 марта 2014
-                h4.media-heading Экскурсия в музей «Огни Москвы»
+                a
+                  h4.media-heading Экскурсия в музей «Огни Москвы»
             li.media.col-md-3.col-lg-12.col-sm-4
+              a.pull-left href="#" 
+                img.media-object alt="..." src="http://placehold.it/205x130" 
               .media-body
                 p.date 10 марта 2014
-                h4.media-heading Второй тур экономической игры «Поток»
+                a
+                  h4.media-heading Второй тур экономической
             li.media.col-md-3.col-lg-12.col-sm-4
+              a.pull-left href="#" 
+                img.media-object alt="..." src="http://placehold.it/205x130" 
               .media-body
                 p.date 8 марта 2014
-                h4.media-heading Образовательная программа в Великобритании
+                a
+                  a
+                    h4.media-heading Программа в Великобритании
           .clearfix
-            a Все новости старшей школы
+            a.all-link Все новости старшей школы
 
       .row.row-bordered.footer
-        .col-lg-8.col-md-push-4
+        .col-lg-8.col-lg-push-4
           .row
-            .col-lg-3
+            .col-lg-3.col-md-3.col-sm-3.col-xs-12
               ul.ftr
                 li О школе 
                 li 
@@ -229,7 +277,7 @@ html
                   a href="#" СМИ о нас
                 li 
                   a href="#" Официальные документы
-            .col-lg-3
+            .col-lg-3.col-md-3.col-sm-3.col-xs-12
               ul.ftr
                 li Образование
                 li
@@ -250,7 +298,7 @@ html
                   a href="#" Женский клуб
                 li
                   a href="#" Родительский клуб
-            .col-lg-3
+            .col-lg-3.col-md-3.col-sm-3.col-xs-12
               ul.ftr
                 li Школьная жизнь
                 li
@@ -269,28 +317,28 @@ html
                   a href="#" Образование
                 li
                   a href="#" Школьная жизнь
-            .col-lg-3
+            .col-lg-3.col-md-3.col-sm-3.col-xs-12
               ul.ftr
                 li Выпускники
                 li Условия приема
                 li Контакты
-        .col-lg-4.col-md-pull-8
-          .row
-            .col-lg-12.col-md-4.contact
+        .col-lg-4.col-lg-pull-8
+          .row.top-border
+            .col-lg-12.col-md-4.col-sm-4.col-xs-12.contact
               p.tel +7 (499) 248 31 94
               p.adress 119121, Москва, ул. Бурденко, д. 21А
               p.mail
                 a href="#" info@theschool.ru
 
-            .col-lg-12.col-md-4.contact
+            .col-lg-12.col-md-4.col-sm-4.col-xs-12.contact
               p.text-justify
                 a.social-ico.ico-fb href="#"
                 a.social-ico.ico-tw href="#"
                 a.social-ico.ico-you href="#"
 
-            .col-lg-12.col-md-4.contact
-              p  &copy; 2003—2014 Частная школа «Золотое сечение»
-              p 
+            .col-lg-12.col-md-4.col-sm-4.col-xs-12.contact
+              p.brend  &copy; 2003—2014 Частная школа «Золотое сечение»
+              p.power
                 | Разработка сайта — 
                 a href="#" Pandra
 
@@ -298,3 +346,4 @@ html
 
     script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
     script src="js/bootstrap.min.js"
+    script src="js/main.js"
