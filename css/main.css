@@ -7188,5 +7188,19 @@ button.close {
     margin-bottom: 4px;
   }
 }
+.darkgrad {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(transparent), to(black));
+  background-image: -webkit-linear-gradient(transparent, black);
+  background-image: -moz-linear-gradient(transparent, black);
+  background-image: -o-linear-gradient(transparent, black);
+  background-image: linear-gradient(transparent, black);
+  opacity: .6;
+}
 
 /*# sourceMappingURL=main.css.map */
