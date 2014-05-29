@@ -8,6 +8,8 @@
 // Set the container width, and override it for fixed navbars in media queries.
 
 .container {
+  min-width: 290px;
+  overflow: hidden;
   @include container-fixed();
 
   @media (min-width: $screen-sm-min) {
