@@ -8,6 +8,8 @@ html
     meta content="marchukilya@gmail.com" name="author"
     meta content="" name="description"
     link href="css/main.css" rel="stylesheet"
+    /[if IE]
+      link href="css/ie.css" rel="stylesheet" type="text/css"
     link rel="shortcut icon" type="image/png" href="favicon.png"
     title School - Главная
   body
@@ -32,7 +34,7 @@ html
           ul.nav.nav-justified
             li
               a href="#" о школе
-            li.active.dropdown#dropdownMenu1
+            li.dropdown#dropdownMenu1
               a.dropdown-toggle data-toggle="dropdown" href="#"
                 | Начальная школа "Радуга" 
                 span.caret
