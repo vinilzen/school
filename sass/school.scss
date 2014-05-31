@@ -743,6 +743,73 @@
 	}
 }
 
+.kontakt {
+	padding-bottom: 23px;
+	p {
+		font-size: 16px;
+		color:#adadad;
+		margin-top: 4px;
+		margin-bottom: 5px;
+	}
+	h2 {
+		font-size: 26px;
+		margin-top: 37px;
+	}
+	h3 {
+		margin-top: 5px;
+	}
+	.media {
+		padding-top: 37px;
+		@media (min-width: $screen-sm){
+			& .pull-left {
+				float: left !important;
+			}
+		}
+	}
+	.media-heading {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.media-body {
+		padding-left: 5px;
+		padding-top: 10px;
+		p {
+			font-size: 15px;
+			color:#adadad;
+			&.phone {
+				font-size: 13px;
+				color:#000;
+				font-weight: normal;
+				span {
+					white-space: nowrap;
+				}
+				em {
+					font-style: normal;
+					color:#adadad;
+				}
+			}
+		}
+	}
+	.media.withpad {
+		.media-body {
+			padding-top: 0;
+		}	
+	}
+	.formap {
+		padding-left: 20px;
+		margin-top: -10px;
+	}
+}
+
+h3.ico-map {
+	font-weight: bold;
+	font-size: 18px;
+	background: url('../img/map-ico.gif') left 3px no-repeat;
+	padding-left: 20px;
+	margin-top: 68px;
+	margin-bottom: 2px;
+}
+
 .no-transition {
   -webkit-transition: height 0;
   -moz-transition: height 0;
