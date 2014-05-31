@@ -4639,10 +4639,19 @@ tbody.collapse.in {
 
 .breadcrumb {
   padding: 8px 15px;
-  padding-left: 1px;
   list-style: none;
   margin-top: 23px;
   margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+  .breadcrumb {
+    padding-left: 1px;
+  }
+}
+@media (max-width: 767px) {
+  .breadcrumb {
+    margin-top: 10px;
+  }
 }
 .breadcrumb > li {
   display: inline-block;
@@ -6661,8 +6670,14 @@ button.close {
   height: 100%;
   margin-bottom: -1px;
 }
+@media (max-width: 767px) {
+  .row-bordered {
+    border-top: 0;
+  }
+}
 .row-bordered .col-bordered {
   height: 100%;
+  margin-left: -1px;
   border-left: 1px solid #ececec;
 }
 .row-bordered .col-bordered:first-child {
@@ -7250,6 +7265,24 @@ button.close {
 .typography {
   padding: 15px 50px 15px 70px;
 }
+@media (max-width: 1200px) {
+  .typography {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .typography {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+}
+@media (max-width: 767px) {
+  .typography {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .typography h1 {
   font-size: 40px;
   font-weight: bold;
@@ -7262,6 +7295,11 @@ button.close {
   margin-top: 80px;
   padding-bottom: 15px;
   border-bottom: 1px solid #E1E1E0;
+}
+@media (max-width: 767px) {
+  .typography h3.inf {
+    margin-top: 50px;
+  }
 }
 .typography p {
   font-size: 16px;
@@ -7280,6 +7318,11 @@ button.close {
   list-style: none;
   padding-left: 0px;
 }
+@media (max-width: 767px) {
+  .typography ul {
+    margin-bottom: 40px;
+  }
+}
 .typography ul li {
   background: no-repeat url(../img/down.gif) left top;
   font-family: Georgia, serif;
@@ -7287,6 +7330,20 @@ button.close {
   line-height: 1.5em;
   margin: 20px 0;
   padding-left: 45px;
+}
+@media (max-width: 767px) {
+  .typography ul li {
+    padding-left: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .typography h1 {
+    font-size: 26px;
+    margin-top: 0;
+  }
+  .typography hr {
+    margin-top: 16px;
+  }
 }
 
 .left-sidebar {
@@ -7655,6 +7712,12 @@ button.close {
   .contact .text-justify {
     padding-top: 20px;
     text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .contact .text-justify {
+    text-align: left;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 992px) {

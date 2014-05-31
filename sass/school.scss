@@ -37,8 +37,12 @@
 	border:1px solid #ececec;
 	height: 100%;
 	margin-bottom: -1px;
+	@media (max-width: $screen-xs-max) {
+		border-top: 0;
+	}
   	.col-bordered {
   		height: 100%;
+  		margin-left: -1px;
   		border-left: 1px solid #ececec;
   		&:first-child {
   			border-left: none;
@@ -617,6 +621,19 @@
 
 .typography {
 	padding: 15px 50px 15px 70px;
+	@media (max-width: $screen-lg) {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+	@media (max-width: $screen-sm) {
+		padding-left: 17px;
+		padding-right: 17px;
+	}
+
+	@media (max-width: $screen-xs-max) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	h1 {
 		font-size: 40px;
 		font-weight: bold;
@@ -628,6 +645,9 @@
 			margin-top: 80px;
 			padding-bottom: 15px;
 			border-bottom: 1px solid #E1E1E0;
+			@media (max-width: $screen-xs-max) {
+				margin-top: 50px;
+			}
 		}
 	}
 	p {
@@ -646,6 +666,9 @@
 		margin-bottom: 84px;
 		list-style: none;
 		padding-left: 0px;
+			@media (max-width: $screen-xs-max) {
+				margin-bottom: 40px;
+			}
 		li {
 			background: no-repeat url(../img/down.gif) left top;
 			font-family: Georgia, serif;
@@ -653,6 +676,19 @@
 			line-height: 1.5em;
 			margin: 20px 0;
 			padding-left: 45px;
+			@media (max-width: $screen-xs-max) {
+				padding-left: 35px;
+			}
+		}
+	}
+
+	@media (max-width: $screen-xs-max) {
+		h1 {
+			font-size: 26px;
+			margin-top: 0;
+		}
+		hr {
+			margin-top: 16px;
 		}
 	}
 }
@@ -1041,6 +1077,12 @@
 	}
 }
 
+@media (max-width: $screen-xs-max) {
+	.contact .text-justify {
+		text-align: left;
+		margin-bottom: 20px;
+	}
+}
 
 
 @media (min-width: $screen-md-min) {

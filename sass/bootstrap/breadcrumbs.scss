@@ -5,10 +5,17 @@
 
 .breadcrumb {
   padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
-  padding-left: 1px;
+  @media (min-width: $screen-sm) {
+    padding-left: 1px;
+  }
   list-style: none;
   margin-top: 23px;
   margin-bottom: 12px;
+
+
+  @media (max-width: $screen-xs-max) { 
+    margin-top: 10px;
+  }
 
   > li {
     display: inline-block;
