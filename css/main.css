@@ -4639,17 +4639,23 @@ tbody.collapse.in {
 
 .breadcrumb {
   padding: 8px 15px;
-  margin-bottom: 20px;
+  padding-left: 1px;
   list-style: none;
-  background-color: whitesmoke;
-  border-radius: 2px;
+  margin-top: 23px;
+  margin-bottom: 12px;
 }
 .breadcrumb > li {
   display: inline-block;
+  font-size: 13px;
+  color: #949494;
+}
+.breadcrumb > li a {
+  font-size: 13px;
+  color: #949494;
 }
 .breadcrumb > li + li:before {
   content: "/\00a0";
-  padding: 0 5px;
+  padding: 0 3px;
   color: #cccccc;
 }
 .breadcrumb > .active {
@@ -6651,10 +6657,9 @@ button.close {
 }
 
 .row-bordered {
-  border-left: 1px solid #ececec;
-  border-right: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
+  border: 1px solid #ececec;
   height: 100%;
+  margin-bottom: -1px;
 }
 .row-bordered .col-bordered {
   height: 100%;
@@ -6676,7 +6681,6 @@ button.close {
   line-height: 58px;
   padding: 0 20px;
   border-bottom: 1px solid #ececec;
-  border-top: 1px solid #ececec;
   margin: 0 -15px;
 }
 @media (max-width: 767px) {
@@ -6911,7 +6915,7 @@ button.close {
 
 .photo-container {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 .photo-container .text-placeholder {
   position: absolute;
@@ -7241,6 +7245,98 @@ button.close {
   #bigpic4 .date, #bigpic3 .date {
     padding-bottom: 0;
   }
+}
+
+.typography {
+  padding: 15px 50px 15px 70px;
+}
+.typography h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.typography h3 {
+  padding-bottom: 12px;
+  font-size: 26px;
+}
+.typography h3.inf {
+  margin-top: 80px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E1E1E0;
+}
+.typography p {
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: 19px;
+}
+.typography a {
+  text-decoration: none;
+}
+.typography .clearfix {
+  height: 6px;
+}
+.typography ul {
+  margin-top: 22px;
+  margin-bottom: 84px;
+  list-style: none;
+  padding-left: 0px;
+}
+.typography ul li {
+  background: no-repeat url(../img/down.gif) left top;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 20px 0;
+  padding-left: 45px;
+}
+
+.left-sidebar {
+  padding-left: 29px;
+  padding-right: 23px;
+}
+.left-sidebar h2 {
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 33px;
+  margin-bottom: 9px;
+}
+.left-sidebar .nav {
+  margin-top: -12px;
+}
+.left-sidebar .nav > li > a {
+  padding-left: 0;
+  text-decoration: none;
+  padding-bottom: 10px;
+  padding-top: 9px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.left-sidebar .nav > li > a:hover {
+  background: none;
+}
+.left-sidebar .nav ul {
+  list-style: none;
+  padding: 0 0 0 10px;
+  margin-top: -2px;
+  margin-bottom: 14px;
+}
+.left-sidebar .nav ul li {
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 2.5em;
+}
+.left-sidebar .nav ul li a {
+  text-decoration: none;
+  color: #7f7f7f;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+}
+.left-sidebar .nav ul li a:hover, .left-sidebar .nav ul li a.active {
+  text-decoration: none;
+  border-bottom: 2px solid #5f9863;
 }
 
 .no-transition {
@@ -7608,6 +7704,15 @@ button.close {
 
   .nav-justified > .dropdown:hover .dropdown-menu {
     display: block;
+  }
+
+  .nav-justified > li, .nav-tabs.nav-justified > li, .nav-tabs.nav-justified > li {
+    line-height: 50px;
+    height: 50px;
+  }
+  .nav-justified > li a, .nav-tabs.nav-justified > li a, .nav-tabs.nav-justified > li a {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 @media (min-width: 1200px) {

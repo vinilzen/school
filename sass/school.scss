@@ -34,10 +34,9 @@
 }
 
 .row-bordered {
-	border-left:1px solid #ececec;
-	border-right:1px solid #ececec;
-	border-bottom:1px solid #ececec;
+	border:1px solid #ececec;
 	height: 100%;
+	margin-bottom: -1px;
   	.col-bordered {
   		height: 100%;
   		border-left: 1px solid #ececec;
@@ -57,7 +56,6 @@
 	line-height: 58px;
 	padding: 0 20px;
 	border-bottom: 1px solid #ececec;
-	border-top: 1px solid #ececec;
 	$gutter: $grid-gutter-width;
 	margin:0  ($gutter / -2);
 	@media (max-width: $screen-xs-max) {
@@ -290,7 +288,7 @@
 
 .photo-container {
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 28px;
 	.text-placeholder {
 		position: absolute;
 		left: 0;
@@ -617,8 +615,97 @@
 	}
 }
 
+.typography {
+	padding: 15px 50px 15px 70px;
+	h1 {
+		font-size: 40px;
+		font-weight: bold;
+	}
+	h3 {
+		padding-bottom: 12px;
+		font-size: 26px;
+		&.inf {
+			margin-top: 80px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #E1E1E0;
+		}
+	}
+	p {
+		font-size: 16px;
+		line-height: 1.5em;
+		margin-bottom: 19px;
+	}
+	a {
+		text-decoration: none;
+	}
+	.clearfix {
+		height: 6px;
+	}
+	ul {
+		margin-top: 22px;
+		margin-bottom: 84px;
+		list-style: none;
+		padding-left: 0px;
+		li {
+			background: no-repeat url(../img/down.gif) left top;
+			font-family: Georgia, serif;
+			font-size: 16px;
+			line-height: 1.5em;
+			margin: 20px 0;
+			padding-left: 45px;
+		}
+	}
+}
 
-
+.left-sidebar {
+	padding-left: 29px;
+	padding-right: 23px;
+	h2 {
+		font-size: 19px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-top: 33px;
+		margin-bottom: 9px;
+	}
+	.nav {
+		margin-top: -12px;
+		& > li > a {
+			padding-left: 0;
+			text-decoration: none;
+			padding-bottom: 10px;
+			padding-top: 9px;
+			color:#000000;
+			font-weight: bold;
+			text-transform: uppercase;
+			&:hover {
+				background:none;
+			}
+		}
+		ul {
+			list-style: none;
+			padding: 0 0 0 10px;
+			margin-top: -2px;
+			margin-bottom: 14px;
+			li {
+				padding: 0;
+				list-style: none;
+				font-size: 14px;
+				line-height: 2.5em;
+				a {
+					text-decoration: none;
+					color:#7f7f7f;
+					font-size: 14px;
+					text-decoration: none;
+					border-bottom: 2px solid #fff;
+					&:hover, &.active {
+						text-decoration: none;
+						border-bottom: 2px solid #5f9863;
+					}
+				}
+			}
+		}
+	}
+}
 
 .no-transition {
   -webkit-transition: height 0;
@@ -1009,6 +1096,15 @@
 
 	.nav-justified > .dropdown:hover .dropdown-menu {
 		display: block;
+	}
+
+	.nav-justified > li, .nav-tabs.nav-justified > li {
+		line-height: 50px;
+		height: 50px;
+		a {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
 	}
 
 }
