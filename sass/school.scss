@@ -821,6 +821,29 @@ h3.ico-map {
 	}
 }
 
+
+.lica {
+	.media-object {
+		margin: 20px auto 0;
+	}
+	h3 {
+		font-size: 18px;
+		font-weight: bold;
+		color:#2c2c2c;
+		margin-bottom: 0;
+	}
+	
+	p {
+		font-size: 15px;
+		color:#adadad;
+		padding: 0 45px;
+		margin-bottom: 30px;
+	}
+
+    .clearfix {
+		height: inherit;
+    }
+}
 .no-transition {
   -webkit-transition: height 0;
   -moz-transition: height 0;
