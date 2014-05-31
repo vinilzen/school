@@ -724,10 +724,16 @@ abbr[data-original-title] {
 }
 
 blockquote {
-  padding: 10px 20px;
+  padding: 0 28px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #eeeeee;
+  border-left: 3px solid #5f9863;
+}
+blockquote p,
+blockquote ul,
+blockquote ol {
+  color: #8d8d8d;
+  font-style: italic;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -7306,24 +7312,44 @@ button.close {
   line-height: 1.5em;
   margin-bottom: 19px;
 }
+.typography p.date {
+  color: #949494;
+  font-size: 16px;
+  margin-top: -10px;
+  margin-bottom: 16px;
+}
+.typography p.txt {
+  font-family: Georgia, serif;
+}
+.typography p.img-cont {
+  margin: 40px 0;
+}
+.typography p.img-cont img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.typography .img-descr {
+  font-family: Georgia, serif;
+  color: #848484;
+  font-size: 14px;
+  margin-top: 10px;
+  display: inline-block;
+}
 .typography a {
   text-decoration: none;
 }
-.typography .clearfix {
-  height: 6px;
-}
-.typography ul {
+.typography ul.donload-list {
   margin-top: 22px;
   margin-bottom: 84px;
   list-style: none;
   padding-left: 0px;
 }
 @media (max-width: 767px) {
-  .typography ul {
+  .typography ul.donload-list {
     margin-bottom: 40px;
   }
 }
-.typography ul li {
+.typography ul.donload-list li {
   background: no-repeat url(../img/down.gif) left top;
   font-family: Georgia, serif;
   font-size: 16px;
@@ -7332,7 +7358,7 @@ button.close {
   padding-left: 45px;
 }
 @media (max-width: 767px) {
-  .typography ul li {
+  .typography ul.donload-list li {
     padding-left: 35px;
   }
 }
@@ -7394,6 +7420,9 @@ button.close {
 .left-sidebar .nav ul li a:hover, .left-sidebar .nav ul li a.active {
   text-decoration: none;
   border-bottom: 2px solid #5f9863;
+}
+.left-sidebar .nav ul li ul li a {
+  font-size: 13px;
 }
 
 .kontakt {
@@ -7475,6 +7504,65 @@ h3.ico-map {
   h3.ico-map {
     margin-top: 10px;
   }
+}
+
+.table-bordered > thead > tr > td {
+  border-bottom-width: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 12px 20px;
+}
+
+.table {
+  margin-top: 35px;
+}
+
+.table > tbody > tr > td {
+  font-size: 14px;
+  padding: 12px 20px;
+}
+
+.bgrgray {
+  background-color: #fcfcfb;
+}
+
+.gallery-preview {
+  list-style: none;
+  padding: 0;
+  float: none;
+  clear: both;
+  height: 80px;
+  overflow: hidden;
+}
+.gallery-preview li {
+  padding: 0;
+  list-style: none;
+  float: left;
+  margin-right: 24px;
+}
+.gallery-preview li a {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.gallery-preview li a img {
+  position: relative;
+  z-index: 1001;
+}
+.gallery-preview li a:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1002;
+  opacity: .5;
+}
+.gallery-preview li a.active:after, .gallery-preview li a:hover:after {
+  opacity: 0;
 }
 
 .lica .media-object {

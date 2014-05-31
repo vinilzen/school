@@ -1,0 +1,188 @@
+doctype html
+html
+  head
+    meta charset="utf-8" 
+    meta content="IE=edge" http-equiv="X-UA-Compatible" 
+    meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"
+    meta content="template language" name="keywords"
+    meta content="marchukilya@gmail.com" name="author"
+    meta content="" name="description"
+    link href="css/main.css" rel="stylesheet"
+    /[if IE]
+      link href="css/ie.css" rel="stylesheet" type="text/css"
+    link rel="shortcut icon" type="image/png" href="favicon.png"
+    title School - Главная
+  body
+    == Slim::Template.new("top-menu.slim").render
+
+    .container
+      .row
+        ol.breadcrumb
+          li
+            a href="#" Главная страница
+          li
+            a href="#" Начальная школа «Радуга»
+          li
+            a href="#" Образование
+          li
+            a href="#" Новости
+          li.activeData Пушкин ad libitum
+
+    .container
+      .row.row-bordered
+        .col-lg-3.visible-lg.col-bordered.left-sidebar
+          h2 О школе
+          hr
+          ul.nav.nav-pills.nav-stacked
+            li
+              a Миссия
+            li
+              a Лица
+              ul
+                li
+                  a Совет директоров
+                li
+                  a Администрация
+                li
+                  a Учителя
+                li
+                  a Кураторы
+                li
+                  a Службы сопровождения
+            li
+              a История школы
+            li
+              a Достижения школы
+            li
+              a Школьная жизнь
+              ul
+                li
+                  a.active Новости
+                li
+                  a СМИ школы
+                li
+                  a Страницы центров
+                  ul
+                    li
+                      a 1 центр
+                    li
+                      a 2 центр
+                    li
+                      a 3 центр
+                    li
+                      a 4 центр
+
+        .col-lg-9.col-xs-12.col-bordered
+          .typography
+            h1 Пушкин ad libitum
+            hr
+            p.date 22 апреля 2014
+            p.txt Дорогие друзья! Спешим поделиться новостью! В апреле 2014 года пройдёт очно-заочный конкурс школьной журналистики XII открытого "Царскосельского форума школьной прессы", тема которого  - «Культура и мы» . В нём примут участие редакционные коллективы из образовательных учреждений Санкт-Петербурга, Москвы, а также других регионов России.
+            p.txt В номинации «ПЕЧАТНЫЕ СМИ» школу «Золотое сечение» представляют сразу три издания: «Маргинал» (независимый журнал учащихся старшей школы), «SchooГрад» (журнал 8-го центра) и «First» (журнал 6-го центра). 
+            p.text-center.img-cont
+              img.img-responsive src="img/push.jpg"
+
+            p.txt В современном российском обществе сложились устойчивые тенденции к потребности коммуникативных умений, что в свою очередь вызвало рост интереса к языковой подготовке школьников и студентов вузов.
+
+            blockquote
+              p.txt Стандартизованный экзамен IELTS может быть выделен как один из лучших сертификационных экзаменов на знание английского языка
+
+
+            p.text-center.img-cont#gal
+              img.img-responsive src="img/il.jpg"
+
+            ul.gallery-preview#gal-preview
+              li
+                a.active href="img/il_1big.jpg"
+                  img src="img/il_1.jpg"
+              li
+                a href="img/il_2big.jpg"
+                  img src="img/il_2.jpg"
+              li
+                a href="img/il_3big.jpg"
+                  img src="img/il_3.jpg"
+              li
+                a href="img/il_4big.jpg"
+                  img src="img/il_4.jpg"
+              li
+                a href="img/il_5big.jpg"
+                  img src="img/il_5.jpg"
+              li
+                a href="img/il_6big.jpg"
+                  img src="img/il_6.jpg"
+
+            .clearfix
+
+            h3 Экспертное мнение
+            p.txt На данном этапе ряд вузов России уже включился в подготовку своих студентов к международным экзаменам, как аттестационным. Так, например c 2010 года Национальный Исследовательский Университет – Высшая школа экономики - запустил экспериментальную подготовку своих студентов к сдаче экзамена IELTS, который в свою очередь сдается студентами, окончившими второй курс обучения для определения уровня коммуникативной компетенции.
+
+            p.text-center.img-cont
+              img.img-responsive src="img/il1.jpg"
+              span.img-descr "Битубишка" в МИРБИС
+
+
+            h3 Учебные периоды
+            p.txt Классы обучаются по пятидневной учебной неделе.
+
+            table.table.table-bordered.table-responsive
+              thead
+                tr.active
+                  td период
+                  td Учебный период
+                  td Каникулы
+              tbody
+                tr 
+                  td.text-center.bgrgray colspan="3" 3, 5, 6, 7, 8, 10 классы
+                tr
+                  td 
+                    strong 1 четверть
+                  td 3 сент. 2012 – 2 нояб. 2012
+                  td 3 нояб. 2012 – 10 нояб. 2012  (8 дней)
+                tr
+                  td 
+                    strong 2 четверть
+                  td 3 сент. 2012 – 2 нояб. 2012
+                  td 3 нояб. 2012 – 10 нояб. 2012  (8 дней)
+                tr
+                  td 
+                    strong 3 четверть
+                  td 3 сент. 2012 – 2 нояб. 2012
+                  td 3 нояб. 2012 – 10 нояб. 2012  (8 дней)
+                tr
+                  td 
+                    strong 4 четверть
+                  td 3 сент. 2012 – 2 нояб. 2012
+                  td
+                tr 
+                  td.text-center.bgrgray colspan="3" 9, 11 классы
+                tr
+                  td 
+                    strong 1 четверть
+                  td 3 сент. 2012 – 2 нояб. 2012
+                  td 3 нояб. 2012 – 10 нояб. 2012  (8 дней)
+                tr
+                  td 
+                    strong 2 четверть
+                  td 3 сент. 2012 – 2 нояб. 2012
+                  td 3 нояб. 2012 – 10 нояб. 2012  (8 дней)
+                tr
+                  td 
+                    strong 3 четверть
+                  td 3 сент. 2012 – 2 нояб. 2012
+                  td 3 нояб. 2012 – 10 нояб. 2012  (8 дней)
+                tr
+                  td 
+                    strong 4 четверть
+                  td 3 сент. 2012 – 2 нояб. 2012
+                  td
+
+            p
+              a href="#" Поделиться новостью в фейсбуке
+
+
+      == Slim::Template.new("ftr.slim").render
+
+
+    script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+    script src="js/bootstrap.min.js"
+    script src="js/main.js"
