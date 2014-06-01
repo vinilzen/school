@@ -947,6 +947,9 @@ h3.ico-map {
 }
 .news-list {
 	padding-bottom: 20px;
+	&.media-list .media {
+		display: block;
+	}
 	.media:first-child {
 		margin-top: 0px;
 		margin-bottom: 17px;
@@ -959,10 +962,15 @@ h3.ico-map {
 		}
 	}
 
-	@media (min-width: $screen-sm) {
+	@media (min-width: $screen-lg) {
 		.pull-left {
 			float: left !important;
-			margin-right: 30px;
+			margin-right: 37px;
+			img {
+				max-width: 136px;
+				max-height: 85px;
+
+			}
 		}
 	}
 	@media (min-width: $screen-lg-min) {
@@ -994,6 +1002,20 @@ h3.ico-map {
 			margin-top: -15px;
 			margin-left: 12px;
 			top: 7px;
+		}
+	}
+	&.news-rulon {
+
+		@media (min-width: $screen-sm) {
+			.pull-left {
+				float: left !important;
+				margin-right: 37px;
+				img {
+					max-width: 136px;
+					max-height: 85px;
+
+				}
+			}
 		}
 	}
 }
