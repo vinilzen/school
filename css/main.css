@@ -4683,6 +4683,14 @@ tbody.collapse.in {
   margin: 20px 0;
   border-radius: 2px;
 }
+.pagination .visible-lg {
+  display: none !important;
+}
+@media (min-width: 1200px) {
+  .pagination .visible-lg {
+    display: inline-block !important;
+  }
+}
 .pagination > li {
   display: inline;
 }
@@ -4693,10 +4701,13 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.42857;
   text-decoration: none;
-  color: #5f9863;
-  background-color: white;
-  border: 1px solid #dddddd;
+  color: #000;
+  font-weight: bold;
   margin-left: -1px;
+  font-size: 16px;
+  font-family: "Myriad Pro", serif;
+  border-radius: 50%;
+  border: 2px solid #fff;
 }
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
@@ -4712,19 +4723,63 @@ tbody.collapse.in {
 .pagination > li > a:hover, .pagination > li > a:focus,
 .pagination > li > span:hover,
 .pagination > li > span:focus {
-  color: #426944;
-  background-color: #eeeeee;
-  border-color: #dddddd;
+  color: #000;
+  cursor: pointer;
+  border: 2px solid #5f9863;
+}
+.pagination > li > a.prev, .pagination > li > a.next {
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.pagination > li > a.next {
+  margin-right: 0;
+  padding-right: 0;
+}
+.pagination > li > a.next:after {
+  content: ' ';
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  position: relative;
+  margin-left: 10px;
+  top: 2px;
+  background: url("../img/arrow.gif") 0px -48px no-repeat;
+}
+.pagination > li > a.next:hover:after {
+  background-position: 0px 0px;
+}
+.pagination > li > a.prev {
+  margin-right: 0;
+  padding-right: 0;
+  padding-right: 15px;
+}
+.pagination > li > a.prev:before {
+  content: ' ';
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  background: url("../img/arrow.gif") 0px -32px no-repeat;
+}
+.pagination > li > a.prev:hover:before {
+  background-position: 0px -16px;
 }
 .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
 .pagination > .active > span,
 .pagination > .active > span:hover,
 .pagination > .active > span:focus {
   z-index: 2;
-  color: white;
-  background-color: #428bca;
-  border-color: #428bca;
-  cursor: default;
+  color: #000;
+  cursor: pointer;
+  border: 2px solid #5f9863;
+}
+.pagination > .active > a.prev, .pagination > .active > a.next {
+  border: 2px solid #fff;
+}
+.pagination > .active > a:hover.prev, .pagination > .active > a:hover.next {
+  border: 2px solid #fff;
 }
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
@@ -4736,6 +4791,11 @@ tbody.collapse.in {
   background-color: white;
   border-color: #dddddd;
   cursor: not-allowed;
+}
+
+.pagination > li > a.next:hover, .pagination > li > a.next:focus, .pagination > li > a.prev:hover, .pagination > li > a.prev:focus {
+  border: 2px solid #fff;
+  color: #5F9863;
 }
 
 .pagination-lg > li > a,
@@ -7619,6 +7679,12 @@ h3.ico-map {
 .news-list .media a.news-cover {
   padding-left: 70px;
 }
+@media (min-width: 768px) {
+  .news-list .pull-left {
+    float: left !important;
+    margin-right: 30px;
+  }
+}
 @media (min-width: 1200px) {
   .news-list .media:first-child {
     margin-top: 25px;
@@ -7635,6 +7701,23 @@ h3.ico-map {
 .news-list h4.media-heading {
   color: #2c2c2c;
   font-size: 18px;
+  font-weight: bold;
+  margin-top: -15px;
+}
+.news-list h4.media-heading a {
+  color: #2c2c2c;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+}
+.news-list h4.media-heading a:hover {
+  text-decoration: none;
+  color: #5f9863;
+}
+.news-list h4.media-heading .camera-ico {
+  margin-top: -15px;
+  margin-left: 12px;
+  top: 7px;
 }
 
 @media (max-width: 480px) {

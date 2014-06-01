@@ -6,7 +6,12 @@
   padding-left: 0;
   margin: $line-height-computed 0;
   border-radius: $border-radius-base;
-
+  .visible-lg {
+    display: none !important;
+    @media (min-width: $screen-lg) {
+      display: inline-block !important;
+    }
+  }
   > li {
     display: inline; // Remove list-style and block-level defaults
     > a,
@@ -16,10 +21,13 @@
       padding: $padding-base-vertical $padding-base-horizontal;
       line-height: $line-height-base;
       text-decoration: none;
-      color: $pagination-color;
-      background-color: $pagination-bg;
-      border: 1px solid $pagination-border;
+      color: #000;
+      font-weight: bold;
       margin-left: -1px;
+      font-size: 16px;
+      font-family: "Myriad Pro", serif;
+      border-radius: 50%;
+      border: 2px solid #fff;
     }
     &:first-child {
       > a,
@@ -40,10 +48,51 @@
   > li > span {
     &:hover,
     &:focus {
-      color: $pagination-hover-color;
-      background-color: $pagination-hover-bg;
-      border-color: $pagination-hover-border;
+      color: #000;
+      cursor: pointer;      
+      border: 2px solid #5f9863;
     }
+  }
+  > li > a.prev, > li > a.next {
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  > li > a.next {
+    margin-right: 0;
+    padding-right: 0;
+    &:after {
+      content: ' ';
+      display: inline-block;
+      width: 10px;
+      height: 16px;
+      position: relative;
+      margin-left: 10px;
+      top:2px;
+      background: url('../img/arrow.gif') 0px -48px no-repeat;
+    }
+  }
+  > li > a.next:hover:after {
+      background-position: 0px 0px;
+  }
+
+  > li > a.prev {
+    margin-right: 0;
+    padding-right: 0;
+    padding-right: 15px;
+    &:before {
+      content: ' ';
+      margin-right: 10px;
+      position: relative;
+      top:2px;
+      display: inline-block;
+      width: 10px;
+      height: 16px;
+      background: url('../img/arrow.gif') 0px -32px no-repeat;
+    }
+  }
+  > li > a.prev:hover:before {
+      background-position: 0px -16px;
   }
 
   > .active > a,
@@ -52,11 +101,17 @@
     &:hover,
     &:focus {
       z-index: 2;
-      color: $pagination-active-color;
-      background-color: $pagination-active-bg;
-      border-color: $pagination-active-border;
-      cursor: default;
+      color: #000;
+      cursor: pointer;      
+      border: 2px solid #5f9863;
     }
+  }
+
+  > .active > a.prev, > .active > a.next {
+    border: 2px solid #fff;
+  }
+  > .active > a:hover.prev, > .active > a:hover.next {
+    border: 2px solid #fff;
   }
 
   > .disabled {
@@ -72,6 +127,12 @@
       cursor: not-allowed;
     }
   }
+}
+
+
+.pagination > li > a.next:hover, .pagination > li > a.next:focus, .pagination > li > a.prev:hover, .pagination > li > a.prev:focus {
+  border: 2px solid #fff;
+  color: #5F9863;
 }
 
 // Sizing

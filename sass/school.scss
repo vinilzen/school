@@ -959,6 +959,12 @@ h3.ico-map {
 		}
 	}
 
+	@media (min-width: $screen-sm) {
+		.pull-left {
+			float: left !important;
+			margin-right: 30px;
+		}
+	}
 	@media (min-width: $screen-lg-min) {
 		.media:first-child { margin-top: 25px; }
 		.media { margin-top: 25px; }
@@ -972,6 +978,23 @@ h3.ico-map {
 	h4.media-heading {
 		color: #2c2c2c;
 		font-size: 18px;
+		font-weight: bold;
+		margin-top: -15px;
+		a {
+			color: #2c2c2c;
+			font-weight: bold;
+			text-decoration: none;
+			font-size: 18px;
+			&:hover {
+				text-decoration: none;
+				color:#5f9863;
+			}
+		}
+		.camera-ico {
+			margin-top: -15px;
+			margin-left: 12px;
+			top: 7px;
+		}
 	}
 }
 
