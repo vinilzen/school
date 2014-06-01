@@ -74,7 +74,9 @@ html
 
         .col-lg-9.col-xs-12.col-bordered
           .typography
-            h1 Пушкин ad libitum
+            h1 
+              | Пушкин ad libitum
+              i.camera-ico
             hr
             p.date 22 апреля 2014
             p.txt Дорогие друзья! Спешим поделиться новостью! В апреле 2014 года пройдёт очно-заочный конкурс школьной журналистики XII открытого "Царскосельского форума школьной прессы", тема которого  - «Культура и мы» . В нём примут участие редакционные коллективы из образовательных учреждений Санкт-Петербурга, Москвы, а также других регионов России.
@@ -178,6 +180,35 @@ html
 
             p
               a href="#" Поделиться новостью в фейсбуке
+
+          .row
+            .col-xs-12
+              h1.title-hdr.topborder Другие новости
+              .row.news-list
+                .media.col-sm-4.col-lg-6.col-md-3.col-xs-12
+                  a.pull-left.news-cover href="#"
+                    img.media-object.img-responsive src="img/pic4.jpg"
+                  .media-body
+                    p.date 16 марта 2014
+                    h4.media-heading Экскурсия в музей «Огни Москвы»
+                .media.col-sm-4.col-lg-6.col-md-3.hidden-xs
+                  a.pull-left.news-cover href="#"
+                    img.media-object src="img/picture22.jpg"
+                  .media-body
+                    p.date 14 марта 2014
+                    h4.media-heading Второй тур игры «Поток»
+                .media.col-sm-4.col-lg-6.col-md-3.hidden-xs
+                  a.pull-left.news-cover href="#"
+                    img.media-object src="img/picture11.jpg"
+                  .media-body
+                    p.date 15 марта 2014
+                    h4.media-heading Экскурсия в музей «Огни Москвы»
+                .media.col-sm-4.col-lg-6.col-md-3.hidden-xs.hidden-sm
+                  a.pull-left.news-cover href="#"
+                    img.media-object src="img/picture44.jpg"
+                  .media-body
+                    p.date 12 марта 2014
+                    h4.media-heading Экскурсия в музей «Огни Москвы»
 
 
       == Slim::Template.new("ftr.slim").render
