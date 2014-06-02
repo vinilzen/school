@@ -1,3 +1,31 @@
 @import "bootstrap";
 @import "justified-nav";
 @import "school";
+
+
+@font-face {
+    font-family: 'HelveticaNeueCyrBlack';
+    src: url('../fonts/helveticaneuecyr-black.eot');
+    src: url('../fonts/helveticaneuecyr-black.eot') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-black.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-black.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-black.svg#HelveticaNeueCyrBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyrLightItalic';
+    src: url('../fonts/helveticaneuecyr-lightitalic.eot');
+    src: url('../fonts/helveticaneuecyr-lightitalic.eot') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-lightitalic.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-lightitalic.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-lightitalic.svg#HelveticaNeueCyrLightItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyrRoman';
+    src: url('../fonts/helveticaneuecyr-roman.eot');
+    src: url('../fonts/helveticaneuecyr-roman.eot') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-roman.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-roman.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-roman.svg#HelveticaNeueCyrRoman') format('svg');
+}

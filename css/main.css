@@ -345,6 +345,7 @@ a {
   color: #5f9863;
   text-decoration: underline;
   cursor: pointer;
+  font-family: "HelveticaNeueCyrRoman", Helvetica, sans-serif;
 }
 a:hover, a:focus {
   color: #426944;
@@ -6721,11 +6722,11 @@ button.close {
   padding-top: 17px;
   padding-bottom: 15px;
 }
-@media (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .nav-justified > li > a, .nav-tabs.nav-justified > li > a, .nav-tabs.nav-justified > li > a {
     font-size: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
@@ -6777,6 +6778,20 @@ button.close {
 .row-bordered .col-bordered:last-child {
   padding-right: 14px;
 }
+.row-bordered .col-bordered:last-child .title-hdr {
+  margin-right: -14px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .row-bordered .col-bordered.col-md-12 {
+    border-left: none;
+  }
+  .row-bordered .col-bordered.col-md-12:first-child {
+    margin-top: -1px;
+  }
+  .row-bordered .col-bordered.col-md-12 .title-hdr {
+    border-top: 1px solid #ECECEC;
+  }
+}
 
 .footer {
   background-color: #f9f9f9;
@@ -6790,11 +6805,11 @@ button.close {
   line-height: 58px;
   padding: 0 20px;
   border-bottom: 1px solid #ececec;
+  font-family: "HelveticaNeueCyrBlack", Helvetica, sans-serif;
   margin: 0 -15px;
 }
 .title-hdr.topborder {
   border-top: 1px solid #ececec;
-  border-right: 1px solid #ECECEC;
 }
 @media (max-width: 767px) {
   .title-hdr {
@@ -6824,10 +6839,15 @@ button.close {
 }
 
 .column {
-  padding-bottom: 35px;
+  padding-bottom: 28px;
 }
 .column p {
   padding-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  .column.col-md-12 {
+    padding-bottom: 47px;
+  }
 }
 
 .ftr {
@@ -6960,25 +6980,38 @@ button.close {
 }
 
 .director {
-  margin-top: 35px;
+  margin-top: 41px;
 }
 .director h2 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
+  font-weight: bold;
 }
 .director span {
   font-size: 16px;
   color: #adadad;
-  padding: 5px 0 10px 0;
+  padding: 4px 0 6px 0;
   display: inline-block;
+  font-family: "HelveticaNeueCyrRoman", "Helvetica Neue", Helvetica, sans-serif;
+}
+.director p {
+  margin-bottom: 4px;
+  margin-bottom: 15px;
 }
 .director p em {
   color: #2c2c2c;
   font-size: 16px;
+  font-family: "HelveticaNeueCyrLightItalic", "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5em;
 }
 .director img {
-  margin-left: 15px;
+  margin-left: 0px;
+  margin-top: 3px;
+}
+.director .column {
+  padding-bottom: 37px;
+  margin-left: -13px;
 }
 
 .all-link {
@@ -7771,6 +7804,21 @@ h3.ico-map {
   }
 }
 
+.anons .row {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.anons .thumbnail a {
+  width: 215px;
+  height: 137px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .anons .title-hdr {
+    margin-right: -14px;
+  }
+}
+
 @media (max-width: 480px) {
   .masthead .row {
     margin-left: 0;
@@ -8191,6 +8239,21 @@ h3.ico-map {
   .brend {
     margin-bottom: 4px;
   }
+}
+@font-face {
+  font-family: 'HelveticaNeueCyrBlack';
+  src: url("../fonts/helveticaneuecyr-black.eot");
+  src: url("../fonts/helveticaneuecyr-black.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-black.woff") format("woff"), url("../fonts/helveticaneuecyr-black.ttf") format("truetype"), url("../fonts/helveticaneuecyr-black.svg#HelveticaNeueCyrBlack") format("svg");
+}
+@font-face {
+  font-family: 'HelveticaNeueCyrLightItalic';
+  src: url("../fonts/helveticaneuecyr-lightitalic.eot");
+  src: url("../fonts/helveticaneuecyr-lightitalic.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-lightitalic.woff") format("woff"), url("../fonts/helveticaneuecyr-lightitalic.ttf") format("truetype"), url("../fonts/helveticaneuecyr-lightitalic.svg#HelveticaNeueCyrLightItalic") format("svg");
+}
+@font-face {
+  font-family: 'HelveticaNeueCyrRoman';
+  src: url("../fonts/helveticaneuecyr-roman.eot");
+  src: url("../fonts/helveticaneuecyr-roman.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-roman.woff") format("woff"), url("../fonts/helveticaneuecyr-roman.ttf") format("truetype"), url("../fonts/helveticaneuecyr-roman.svg#HelveticaNeueCyrRoman") format("svg");
 }
 
 /*# sourceMappingURL=main.css.map */
