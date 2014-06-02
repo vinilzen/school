@@ -59,9 +59,11 @@
   		}
   		&:last-child {
   			padding-right: 14px;
-  			.title-hdr {
-  				margin-right: -14px;
-  			}
+  			@media (min-width: $screen-sm) and (max-width: $screen-md-max) {
+				.title-hdr {
+					margin-right: -14px;
+				}
+			}
   		}
   		@media (min-width: $screen-sm) and (max-width: $screen-md-max) {
   			&.col-md-12 {
@@ -1080,7 +1082,7 @@ h3.ico-map {
 		height: 137px;
 		overflow: hidden;
 	}
-	@media (min-width: $screen-sm) {
+	@media (min-width: $screen-sm) and (max-width: $screen-md-max) {
 		.title-hdr {
 			margin-right: -14px;
 		}

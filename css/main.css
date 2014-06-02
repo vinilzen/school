@@ -6778,8 +6778,10 @@ button.close {
 .row-bordered .col-bordered:last-child {
   padding-right: 14px;
 }
-.row-bordered .col-bordered:last-child .title-hdr {
-  margin-right: -14px;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .row-bordered .col-bordered:last-child .title-hdr {
+    margin-right: -14px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .row-bordered .col-bordered.col-md-12 {
@@ -7813,7 +7815,7 @@ h3.ico-map {
   height: 137px;
   overflow: hidden;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .anons .title-hdr {
     margin-right: -14px;
   }
