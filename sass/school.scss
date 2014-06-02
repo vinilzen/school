@@ -3,13 +3,22 @@
 	white-space: nowrap;
 	font-weight: bold;
 	color:#000;
-	font-size: 12px;
-	padding-top: 16px;
+	font-size: 13px;
+	padding-top: 17px;
+	padding-bottom: 15px;
+	@media (max-width: $screen-md-max) {
+		font-size: 12px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
 }
 
 .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
 	border-right: none;
 	border-left: 1px solid #D5D5D5;
+	@media (max-width: $screen-sm-max) {
+		border-left: none;
+	}
 	&:hover {
 		background-color: #5f9863;
 		color:#fff;
@@ -42,10 +51,14 @@
 	}
   	.col-bordered {
   		height: 100%;
-  		margin-left: -1px;
+  		// margin-left: -1px;
   		border-left: 1px solid #ececec;
+
   		&:first-child {
   			border-left: none;
+  		}
+  		&:last-child {
+  			padding-right: 14px;
   		}
   	}
 }
@@ -62,6 +75,7 @@
 	border-bottom: 1px solid #ececec;
 	&.topborder {
 		border-top: 1px solid #ececec;
+		border-right: 1px solid #ECECEC;
 	}
 	$gutter: $grid-gutter-width;
 	margin:0  ($gutter / -2);
@@ -384,6 +398,9 @@
 	    margin-top: -2px;
 	    margin-left: 0;
 	    border-radius: 0;
+	    @media (min-width: $screen-xs) and (max-width: $screen-md-max){
+			margin-top: 0;
+	    }
 	}
 
 	&:hover>.dropdown-menu {
@@ -655,7 +672,7 @@
 	}
 	p {
 		font-size: 16px;
-		line-height: 1.5em;
+		line-height: 1.65em;
 		margin-bottom: 19px;
 		&.date {
 			color:#949494;
@@ -1217,10 +1234,10 @@ h3.ico-map {
 	.dropdown-menu li {
 		white-space: nowrap;
 	}
-	.menu-lvl2 {
+	.dropdown.open .dropdown-menu .menu-lvl2 {
 		padding-left: 0;
 		li {
-			margin-bottom: -2px;
+			// margin-bottom: -2px;
 			a {
 				width: 100%;
 				display: inline-block;
@@ -1260,7 +1277,24 @@ h3.ico-map {
 					color:#5f9863;
 					font-weight: bold;
 				}
+				li a {
+					font-weight: normal;
+					color: #808080;
+					padding-left: 43px;
+				}
 			}
+		}
+	}
+	.dropdown.open .dropdown-menu .menu-lvl2 li.open {
+		a {
+			color: #5F9863;
+			font-weight: bold;
+		}
+		li a {
+			font-size: 13px;
+			font-weight: normal;
+			color: #808080;
+			background-color: #FAFAFA;
 		}
 	}
 	.dropdown a .caret {
@@ -1282,12 +1316,10 @@ h3.ico-map {
 		position: static;
 		border: none;
 		border-top: 1px solid #EBEBEB;
-		// border-bottom: 1px solid #EBEBEB;
 		background-color: #ebebeb;
 		li {
 			height: 40px;
 			margin-bottom: 1px;
-			// border-bottom: 1px solid #EBEBEB;
 			border-top:none;
 		}
 		a {
@@ -1411,12 +1443,6 @@ h3.ico-map {
 	}
 
 	.nav-justified > li, .nav-tabs.nav-justified > li {
-		line-height: 50px;
-		height: 50px;
-		a {
-			padding-top: 0;
-			padding-bottom: 0;
-		}
 	}
 
 }
