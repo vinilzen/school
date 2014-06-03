@@ -5261,13 +5261,17 @@ a.thumbnail.active {
 
 .media-heading {
   margin: 0 0 5px;
+  font-family: "HelveticaNeueCyrMedium", "Helvetica Neue", Helvetica, sans-serif;
+}
+.media-heading a {
+  font-family: "HelveticaNeueCyrMedium", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .media > .pull-left {
-  margin-right: 10px;
+  margin-right: 19px;
 }
 .media > .pull-right {
-  margin-left: 10px;
+  margin-left: 19px;
 }
 
 .media-list {
@@ -6830,6 +6834,7 @@ button.close {
 .thumbnail .caption p small {
   font-size: 14px;
   color: #949494;
+  font-family: "HelveticaNeueCyrRoman", "Helvetica Neue", Helvetica, sans-serif;
 }
 .thumbnail .caption a {
   text-decoration: none;
@@ -6837,7 +6842,9 @@ button.close {
 .thumbnail h3 {
   font-size: 18px;
   color: #2c2c2c;
-  margin-bottom: 5px;
+  font-family: "HelveticaNeueCyrMedium", "Helvetica Neue", Helvetica, sans-serif;
+  margin-bottom: 7px;
+  margin-top: 24px;
 }
 
 .column {
@@ -6908,7 +6915,8 @@ button.close {
   }
 }
 .media-list .media {
-  margin-top: 30px;
+  margin-top: 25px;
+  margin-bottom: 17px;
 }
 @media (max-width: 767px) {
   .media-list .media {
@@ -6931,10 +6939,14 @@ button.close {
 .media-list .date {
   color: #949494;
   font-size: 14px;
+  margin-top: -2px;
+  margin-bottom: 6px;
 }
 .media-list h4 {
   color: #2c2c2c;
   font-size: 18px;
+  line-height: 1.45em;
+  padding-right: 10px;
 }
 .media-list a {
   text-decoration: none;
@@ -7019,6 +7031,11 @@ button.close {
 .all-link {
   margin-bottom: 45px;
   display: inline-block;
+}
+@media (min-width: 1200px) {
+  .all-link {
+    margin-left: 4px;
+  }
 }
 
 .dropdown-menu {
@@ -7238,6 +7255,11 @@ button.close {
   }
   #bigpic1 .text-placeholder {
     padding-left: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #bigpic1 img {
+    height: 288px;
   }
 }
 
@@ -7754,11 +7776,11 @@ h3.ico-map {
 @media (min-width: 1200px) {
   .news-list .pull-left {
     float: left !important;
-    margin-right: 37px;
+    margin-right: 19px;
   }
   .news-list .pull-left img {
-    max-width: 136px;
-    max-height: 85px;
+    width: 136px;
+    height: 85px;
   }
 }
 @media (min-width: 1200px) {
@@ -7772,37 +7794,37 @@ h3.ico-map {
 .news-list p.date {
   color: #949494;
   font-size: 14px;
-  margin-top: -4px;
+  margin-top: -2px;
+  margin-bottom: 6px;
 }
-.news-list h4.media-heading {
+.news-list a {
+  text-decoration: none;
+}
+.news-list a h4.media-heading {
   color: #2c2c2c;
   font-size: 18px;
   font-weight: bold;
-  margin-top: -15px;
+  line-height: 1.45em;
 }
-.news-list h4.media-heading a {
-  color: #2c2c2c;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 18px;
-}
-.news-list h4.media-heading a:hover {
-  text-decoration: none;
-  color: #5f9863;
-}
-.news-list h4.media-heading .camera-ico {
+.news-list a h4.media-heading .camera-ico {
   margin-top: -15px;
   margin-left: 12px;
   top: 7px;
 }
+.news-list a:hover {
+  text-decoration: none;
+}
+.news-list a:hover h4.media-heading {
+  text-decoration: none;
+  color: #5f9863;
+}
 @media (min-width: 768px) {
   .news-list.news-rulon .pull-left {
     float: left !important;
-    margin-right: 37px;
   }
   .news-list.news-rulon .pull-left img {
-    max-width: 136px;
-    max-height: 85px;
+    width: 137px;
+    height: 85px;
   }
 }
 
@@ -8215,9 +8237,10 @@ h3.ico-map {
     padding-right: 0;
   }
 
-  .media-object {
-    max-width: 137px;
-    max-height: 85px;
+  .media-object:not(.img-circle) {
+    width: 137px;
+    height: 85px;
+    margin-left: 4px;
   }
 
   .social-ico {
@@ -8256,6 +8279,11 @@ h3.ico-map {
   font-family: 'HelveticaNeueCyrRoman';
   src: url("../fonts/helveticaneuecyr-roman.eot");
   src: url("../fonts/helveticaneuecyr-roman.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-roman.woff") format("woff"), url("../fonts/helveticaneuecyr-roman.ttf") format("truetype"), url("../fonts/helveticaneuecyr-roman.svg#HelveticaNeueCyrRoman") format("svg");
+}
+@font-face {
+  font-family: 'HelveticaNeueCyrMedium';
+  src: url("../fonts/helveticaneuecyr-medium.eot");
+  src: url("../fonts/helveticaneuecyr-medium.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-medium.woff") format("woff"), url("../fonts/helveticaneuecyr-medium.ttf") format("truetype"), url("../fonts/helveticaneuecyr-medium.svg#HelveticaNeueCyrMedium") format("svg");
 }
 
 /*# sourceMappingURL=main.css.map */

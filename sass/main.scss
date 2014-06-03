@@ -29,3 +29,12 @@
          url('../fonts/helveticaneuecyr-roman.ttf') format('truetype'),
          url('../fonts/helveticaneuecyr-roman.svg#HelveticaNeueCyrRoman') format('svg');
 }
+
+@font-face {
+    font-family: 'HelveticaNeueCyrMedium';
+    src: url('../fonts/helveticaneuecyr-medium.eot');
+    src: url('../fonts/helveticaneuecyr-medium.eot') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-medium.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-medium.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-medium.svg#HelveticaNeueCyrMedium') format('svg');
+}
