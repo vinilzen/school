@@ -7071,6 +7071,8 @@ button.close {
   font-size: 13px;
   border: 1px solid #ded286;
   border-radius: 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.25);
 }
@@ -7105,6 +7107,7 @@ button.close {
   font-size: 52px;
   margin: 0;
   padding: 0;
+  line-height: 1.2em;
 }
 @media (max-width: 767px) {
   .photo-container h2 {
@@ -7251,15 +7254,36 @@ button.close {
   }
   #bigpic1 .btn.btn-transporent {
     left: 20px;
-    top: 18px;
+    top: 15px;
   }
   #bigpic1 .text-placeholder {
     padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+  }
+  #bigpic1 .text-placeholder h2 {
+    line-height: .9em;
+  }
+  #bigpic1 .date {
+    padding-bottom: 7px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #bigpic1 img {
     height: 288px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #bigpic1 h2 {
+    font-size: 43px;
+    line-height: .95em;
+    padding-right: 40px;
+  }
+  #bigpic1 .text-placeholder {
+    padding-bottom: 25px;
+  }
+  #bigpic1 .date {
+    padding-bottom: 2px;
   }
 }
 
@@ -7277,6 +7301,7 @@ button.close {
 }
 #bigpic2 h2 {
   font-size: 32px;
+  line-height: 1em;
 }
 #bigpic2 .text-placeholder {
   padding-left: 35px;
@@ -7291,14 +7316,14 @@ button.close {
   }
   #bigpic2 .text-placeholder {
     padding-left: 17px;
-    padding-bottom: 16px;
+    padding-bottom: 20px;
   }
   #bigpic2 .btn.btn-transporent {
     left: 17px;
-    top: 18px;
+    top: 15px;
   }
   #bigpic2 .date {
-    padding-bottom: 0;
+    padding-bottom: 4px;
   }
 }
 
@@ -7408,10 +7433,18 @@ button.close {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  #bigpic4 .text-placeholder, #bigpic3 .text-placeholder {
+    padding-right: 75px;
+  }
+  #bigpic4 .date, #bigpic3 .date {
+    padding-bottom: 4px;
+  }
+}
 @media (min-width: 1200px) {
   #bigpic4 .text-placeholder, #bigpic3 .text-placeholder {
     padding-left: 17px;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
   }
   #bigpic4 .btn.btn-transporent, #bigpic3 .btn.btn-transporent {
     left: 17px;

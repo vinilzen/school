@@ -346,6 +346,8 @@
 	font-size: 13px;
 	border: 1px solid #ded286;
 	border-radius: 3px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	text-decoration: none;
 	background-color: rgba(0, 0, 0, 0.25);
 	&::hover, &:focus {
@@ -379,6 +381,7 @@
 		font-size: 52px;
 		margin: 0;
 		padding: 0;
+		line-height: 1.2em;
 	}
 
 	@media (max-width: $screen-xs-max) {
@@ -530,15 +533,37 @@
 		}
 		.btn.btn-transporent {
 			left: 20px;
-			top: 18px;
+			top: 15px;
 		}
 		.text-placeholder {
 			padding-left: 20px;
+			padding-right: 40px;
+			padding-bottom: 30px;
+			h2 {
+				line-height: .9em;
+			}
+		}
+		.date {
+			padding-bottom: 7px;
 		}
 	}
 	@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
 		img {
 			height: 288px;
+		}
+	}
+
+	@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+		h2 {
+			font-size: 43px;
+			line-height: .95em;
+			padding-right: 40px;
+		}
+		.text-placeholder {
+			padding-bottom: 25px;
+		}
+		.date {
+			padding-bottom: 2px;
 		}
 	}
 
@@ -557,7 +582,9 @@
 	}
 	h2 {
 		font-size: 32px;
+		line-height: 1em;
 	}
+
 	.text-placeholder { 
 		padding-left: 35px;
 	}
@@ -570,14 +597,14 @@
 
 		.text-placeholder {
 			padding-left: 17px;
-			padding-bottom: 16px;
+			padding-bottom: 20px;
 		}
 		.btn.btn-transporent {
 			left: 17px;
-			top: 18px;
+			top: 15px;
 		}
 		.date {
-			padding-bottom: 0;
+			padding-bottom: 4px;
 		}
 	}
 }
@@ -675,10 +702,21 @@
 	}
 }
 #bigpic4, #bigpic3 {
+
+
+	@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+		.text-placeholder {
+			padding-right: 75px;
+		}
+		.date {
+			padding-bottom: 4px;
+		}
+	}
+
 	@media (min-width: $screen-lg) {
 		.text-placeholder {
 			padding-left: 17px;
-			padding-bottom: 16px;
+			padding-bottom: 14px;
 		}
 		.btn.btn-transporent {
 			left: 17px;
