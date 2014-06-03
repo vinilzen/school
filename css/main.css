@@ -6745,7 +6745,7 @@ button.close {
 }
 @media only screen and (max-width: 767px) {
   .logo {
-    background-image: url("../img/logo-sm.gif");
+    background-image: url("../img/logo-sm@2x.gif");
     width: 276px;
     height: 74px;
   }
@@ -7182,11 +7182,13 @@ button.close {
   }
   .photo-container .date {
     font-size: 18px;
+    padding-bottom: 3px;
   }
 }
 @media (max-width: 480px) {
   .photo-container h2 {
     font-size: 36px;
+    line-height: 1em;
   }
 }
 

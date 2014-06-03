@@ -16,7 +16,7 @@
 		height: 83px;
 	}
 	@media only screen and (max-width: $screen-xs-max) {
-		background-image: url('../img/logo-sm.gif');
+		background-image: url('../img/logo-sm@2x.gif');
 		width: 276px;
 		height: 74px;
 	}
@@ -460,12 +460,14 @@
 	    }
 		.date {
 			font-size: 18px;
+			padding-bottom: 3px;
 		}
 	}
 
 	@media (max-width: $screen-xs) {
 		h2 {
 		    font-size: 36px;
+		    line-height: 1em;
 	    }
 	}
 
