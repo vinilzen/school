@@ -1,3 +1,67 @@
+.logo {
+	width: 660px;
+	height: 103px;
+	display: inline-block;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../img/logo-full.gif');
+	
+    /* non-retina */
+	@media only screen and (min-width: $screen-sm) {
+		background-image: url('../img/logo-full.gif');
+	}
+	@media only screen and (min-width: $screen-sm) and (max-width: $screen-md-max) {
+		width: 530px;
+		height: 83px;
+	}
+	@media only screen and (max-width: $screen-xs-max) {
+		background-image: url('../img/logo-sm.gif');
+		
+	}
+
+	/* retina */
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: $screen-xs-max),
+	only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: $screen-xs-max),
+	only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: $screen-xs-max),
+	only screen and (        min-device-pixel-ratio: 2)      and (max-width: $screen-xs-max),
+	only screen and (                min-resolution: 192dpi) and (max-width: $screen-xs-max),
+	only screen and (                min-resolution: 2dppx)  and (max-width: $screen-xs-max) { 
+		background-image: url('../img/logo-sm-pad@2x.gif');
+		width: 528px;
+		height: 82px;
+		margin-left: 15px;
+	}
+
+	/* retina */
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2)      and (max-width: $screen-xs),
+	only screen and (   min--moz-device-pixel-ratio: 2)      and (max-width: $screen-xs),
+	only screen and (     -o-min-device-pixel-ratio: 2/1)    and (max-width: $screen-xs),
+	only screen and (        min-device-pixel-ratio: 2)      and (max-width: $screen-xs),
+	only screen and (                min-resolution: 192dpi) and (max-width: $screen-xs),
+	only screen and (                min-resolution: 2dppx)  and (max-width: $screen-xs) { 
+		background-image: url('../img/logo-sm@2x.gif');
+		width: 276px;
+		height: 74px;
+		margin-left: 5px;
+	}
+	
+	/* retina */
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: $screen-sm),
+	only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: $screen-sm),
+	only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: $screen-sm),
+	only screen and (        min-device-pixel-ratio: 2)      and (min-width: $screen-sm),
+	only screen and (                min-resolution: 192dpi) and (min-width: $screen-sm),
+	only screen and (                min-resolution: 2dppx)  and (min-width: $screen-sm) { 
+		background-image: url('../img/logo-sm-pad@2x.gif');
+		width: 528px;
+		height: 82px;
+	}
+
+}
 .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
 	text-transform: uppercase;
 	white-space: nowrap;
@@ -298,9 +362,11 @@
 		margin-top: 3px;
 	}
 	.column {
-		// padding-bottom: 28px;
 		padding-bottom: 37px;
 		margin-left: -13px;
+		@media (max-width: $screen-xs-max) {
+			margin-left: 0;
+		}
 	}
 }
 

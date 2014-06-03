@@ -6717,6 +6717,59 @@ button.close {
     padding-left: 0;
   }
 }
+.logo {
+  width: 660px;
+  height: 103px;
+  display: inline-block;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/logo-full.gif");
+  /* non-retina */
+  /* retina */
+  /* retina */
+  /* retina */
+}
+@media only screen and (min-width: 768px) {
+  .logo {
+    background-image: url("../img/logo-full.gif");
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    width: 530px;
+    height: 83px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .logo {
+    background-image: url("../img/logo-sm.gif");
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 767px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 767px), only screen and (min-device-pixel-ratio: 2) and (max-width: 767px), only screen and (min-resolution: 192dpi) and (max-width: 767px), only screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .logo {
+    background-image: url("../img/logo-sm-pad@2x.gif");
+    width: 528px;
+    height: 82px;
+    margin-left: 15px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 480px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 480px), only screen and (min-device-pixel-ratio: 2) and (max-width: 480px), only screen and (min-resolution: 192dpi) and (max-width: 480px), only screen and (min-resolution: 2dppx) and (max-width: 480px) {
+  .logo {
+    background-image: url("../img/logo-sm@2x.gif");
+    width: 276px;
+    height: 74px;
+    margin-left: 5px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 768px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 768px), only screen and (min-device-pixel-ratio: 2) and (min-width: 768px), only screen and (min-resolution: 192dpi) and (min-width: 768px), only screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .logo {
+    background-image: url("../img/logo-sm-pad@2x.gif");
+    width: 528px;
+    height: 82px;
+  }
+}
+
 .nav-justified > li > a, .nav-tabs.nav-justified > li > a, .nav-tabs.nav-justified > li > a {
   text-transform: uppercase;
   white-space: nowrap;
@@ -7026,6 +7079,11 @@ button.close {
 .director .column {
   padding-bottom: 37px;
   margin-left: -13px;
+}
+@media (max-width: 767px) {
+  .director .column {
+    margin-left: 0;
+  }
 }
 
 .all-link {
