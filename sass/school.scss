@@ -66,6 +66,9 @@
 	}
 
 }
+.navbar-toggle {
+	display: inline-block;
+}
 .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
 	text-transform: uppercase;
 	white-space: nowrap;
@@ -87,6 +90,9 @@
 	border-left: 1px solid #D5D5D5;
 	@media (max-width: $screen-sm-max) {
 		border-left: none;
+	}
+	@media (min-width: $screen-lg) {
+		height: 50px;
 	}
 	&:hover {
 		background-color: #5f9863;
@@ -153,11 +159,11 @@
 	background-color: #f9f9f9;
 	font-size: 22px;
 	color:#2c2c2c;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 58px;
 	padding: 0 20px;
 	border-bottom: 1px solid #ececec;
-	font-family: "HelveticaNeueCyrBlack", Helvetica, sans-serif;
+	font-family: "HelveticaNeueCyr", Helvetica, sans-serif;
 	&.topborder {
 		border-top: 1px solid #ececec;
 	}
@@ -177,7 +183,8 @@
 			small {
 				font-size: 14px;
 				color: #949494;
-				font-family: "HelveticaNeueCyrRoman", "Helvetica Neue", Helvetica, sans-serif;
+				font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
+				font-weight: 300;
 			}
 		}
 		a {
@@ -187,7 +194,8 @@
 	h3 {
 		font-size: 18px;
 		color:#2c2c2c;
-		font-family: "HelveticaNeueCyrMedium", "Helvetica Neue", Helvetica, sans-serif;
+		font-weight: 500;
+		font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
 		margin-bottom: 7px;
 		margin-top: 24px;
 	}
@@ -214,7 +222,10 @@
 		list-style: none;
 		color:#2c2c2c;
 		font-size: 14px;
+  		font-family: "HelveticaNeueCyr", Helvetica, sans-serif;
+  		font-weight: 300;
 		a {
+  			font-weight: 300;
 			color:#949494;
 			font-size: 14px;
 		}
@@ -349,7 +360,8 @@
 		color:#adadad;
 		padding: 4px 0 6px 0;
 		display: inline-block;
-  		font-family: "HelveticaNeueCyrRoman", "Helvetica Neue", Helvetica, sans-serif;
+  		font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
+  		font-weight: 300;
 	}
 	p {
 		margin-bottom: 4px;
@@ -357,7 +369,9 @@
 		em {
 			color:#2c2c2c;
 			font-size: 16px;
-			font-family: "HelveticaNeueCyrLightItalic", "Helvetica Neue", Helvetica, sans-serif;
+			font-weight: 100;
+			font-style: italic;
+			font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
 			line-height: 1.5em;
 		}
 	}
@@ -414,6 +428,8 @@
 	top:15px;
 	color:#fff;
 	font-size: 13px;
+    font-family: 'HelveticaNeueCyr', "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
 	border: 1px solid #ded286;
 	border-radius: 3px;
 	padding-top: 4px;
@@ -447,11 +463,12 @@
 	}
 	h2 {
 		color:#fff;
-		font-weight: bold;
 		font-size: 52px;
 		margin: 0;
 		padding: 0;
 		line-height: 1.2em;
+		font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
+		font-weight: bold;
 	}
 
 	@media (max-width: $screen-xs-max) {
@@ -1093,7 +1110,15 @@ h3.ico-map {
 		}
 	}
 }
-
+.typography a.share {
+	text-decoration: underline;
+	font-size: 14px;
+	font-weight: 300;
+	&:hover {
+		text-decoration: none;
+		color: #5F9863;
+	}
+}
 .lica {
 	.media-object {
 		margin: 20px auto 0;
@@ -1108,7 +1133,7 @@ h3.ico-map {
 	p {
 		font-size: 15px;
 		color:#adadad;
-		padding: 0 45px;
+		padding: 0 40px;
 		margin-bottom: 30px;
 	}
 
@@ -1340,7 +1365,7 @@ h3.ico-map {
 		margin-bottom: 1px;
 		a {
 			color:#808080;
-			font-weight: normal;
+			font-weight: 300;
 			font-size: 13px;
 			padding-left: 65px;
 			max-width: inherit;
@@ -1421,7 +1446,7 @@ h3.ico-map {
 				color:#808080;
 				font-size: 13px;
 				text-transform: none;
-				font-weight: normal;
+				font-weight: 300;
 				padding-left: 33px;
 				&:hover, &.active {
 					color:#5f9863;
@@ -1455,9 +1480,12 @@ h3.ico-map {
 					font-weight: bold;
 				}
 				li a {
-					font-weight: normal;
+					font-weight: 300;
 					color: #808080;
 					padding-left: 43px;
+					&:hover {
+						color:#5F9863;
+					}
 				}
 			}
 		}
@@ -1572,7 +1600,7 @@ h3.ico-map {
 				a {
 					text-transform: none;
 					color:#808080;
-					font-weight: normal;
+					font-weight: 300;
 					padding: 0 20px 0 33px;
 					&:hover, &.active {
 						color:#5f9863;

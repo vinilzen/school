@@ -345,7 +345,8 @@ a {
   color: #5f9863;
   text-decoration: underline;
   cursor: pointer;
-  font-family: "HelveticaNeueCyrRoman", Helvetica, sans-serif;
+  font-family: "HelveticaNeueCyr", Helvetica, sans-serif;
+  font-weight: 300;
 }
 a:hover, a:focus {
   color: #426944;
@@ -4649,6 +4650,8 @@ tbody.collapse.in {
   list-style: none;
   margin-top: 23px;
   margin-bottom: 12px;
+  font-family: "HelveticaNeueCyr", Helvetica, sans-serif;
+  font-weight: 300;
 }
 @media (min-width: 768px) {
   .breadcrumb {
@@ -4717,7 +4720,6 @@ tbody.collapse.in {
   font-weight: bold;
   margin-left: -1px;
   font-size: 16px;
-  font-family: "Myriad Pro", serif;
   border-bottom-left-radius: 19px;
   border-bottom-right-radius: 19px;
   border-top-left-radius: 19px;
@@ -4746,9 +4748,16 @@ tbody.collapse.in {
   text-transform: uppercase;
   white-space: nowrap;
 }
+.pagination > li > a.prev span, .pagination > li > a.next span {
+  top: -2px;
+  position: relative;
+}
 .pagination > li > a.next {
+  padding-top: 8px;
   margin-right: 0;
   padding-right: 0;
+  padding-left: 5px;
+  font-size: 13px;
 }
 .pagination > li > a.next:after {
   content: ' ';
@@ -4764,9 +4773,11 @@ tbody.collapse.in {
   background-position: 0px 0px;
 }
 .pagination > li > a.prev {
+  padding-top: 8px;
   margin-right: 0;
-  padding-right: 0;
-  padding-right: 15px;
+  padding-right: 5px;
+  padding-left: 0;
+  font-size: 13px;
 }
 .pagination > li > a.prev:before {
   content: ' ';
@@ -5263,10 +5274,12 @@ a.thumbnail.active {
 
 .media-heading {
   margin: 0 0 5px;
-  font-family: "HelveticaNeueCyrMedium", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
 }
 .media-heading a {
-  font-family: "HelveticaNeueCyrMedium", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
 }
 
 .media > .pull-left {
@@ -6779,6 +6792,10 @@ button.close {
   }
 }
 
+.navbar-toggle {
+  display: inline-block;
+}
+
 .nav-justified > li > a, .nav-tabs.nav-justified > li > a, .nav-tabs.nav-justified > li > a {
   text-transform: uppercase;
   white-space: nowrap;
@@ -6803,6 +6820,11 @@ button.close {
 @media (max-width: 991px) {
   .nav-justified > li > a, .nav-tabs.nav-justified > li > a, .nav-tabs.nav-justified > li > a {
     border-left: none;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-justified > li > a, .nav-tabs.nav-justified > li > a, .nav-tabs.nav-justified > li > a {
+    height: 50px;
   }
 }
 .nav-justified > li > a:hover, .nav-tabs.nav-justified > li > a:hover {
@@ -6869,11 +6891,11 @@ button.close {
   background-color: #f9f9f9;
   font-size: 22px;
   color: #2c2c2c;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 58px;
   padding: 0 20px;
   border-bottom: 1px solid #ececec;
-  font-family: "HelveticaNeueCyrBlack", Helvetica, sans-serif;
+  font-family: "HelveticaNeueCyr", Helvetica, sans-serif;
   margin: 0 -15px;
 }
 .title-hdr.topborder {
@@ -6896,7 +6918,8 @@ button.close {
 .thumbnail .caption p small {
   font-size: 14px;
   color: #949494;
-  font-family: "HelveticaNeueCyrRoman", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300;
 }
 .thumbnail .caption a {
   text-decoration: none;
@@ -6904,7 +6927,8 @@ button.close {
 .thumbnail h3 {
   font-size: 18px;
   color: #2c2c2c;
-  font-family: "HelveticaNeueCyrMedium", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+  font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
   margin-bottom: 7px;
   margin-top: 24px;
 }
@@ -6932,8 +6956,11 @@ button.close {
   list-style: none;
   color: #2c2c2c;
   font-size: 14px;
+  font-family: "HelveticaNeueCyr", Helvetica, sans-serif;
+  font-weight: 300;
 }
 .ftr li a {
+  font-weight: 300;
   color: #949494;
   font-size: 14px;
 }
@@ -7069,7 +7096,8 @@ button.close {
   color: #adadad;
   padding: 4px 0 6px 0;
   display: inline-block;
-  font-family: "HelveticaNeueCyrRoman", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300;
 }
 .director p {
   margin-bottom: 4px;
@@ -7078,7 +7106,9 @@ button.close {
 .director p em {
   color: #2c2c2c;
   font-size: 16px;
-  font-family: "HelveticaNeueCyrLightItalic", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5em;
 }
 .director img {
@@ -7136,6 +7166,8 @@ button.close {
   top: 15px;
   color: #fff;
   font-size: 13px;
+  font-family: 'HelveticaNeueCyr', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300;
   border: 1px solid #ded286;
   border-radius: 3px;
   padding-top: 4px;
@@ -7170,11 +7202,12 @@ button.close {
 }
 .photo-container h2 {
   color: #fff;
-  font-weight: bold;
   font-size: 52px;
   margin: 0;
   padding: 0;
   line-height: 1.2em;
+  font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
 }
 @media (max-width: 767px) {
   .photo-container h2 {
@@ -7831,6 +7864,16 @@ h3.ico-map {
   opacity: 0;
 }
 
+.typography a.share {
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 300;
+}
+.typography a.share:hover {
+  text-decoration: none;
+  color: #5F9863;
+}
+
 .lica .media-object {
   margin: 20px auto 0;
 }
@@ -7843,7 +7886,7 @@ h3.ico-map {
 .lica p {
   font-size: 15px;
   color: #adadad;
-  padding: 0 45px;
+  padding: 0 40px;
   margin-bottom: 30px;
 }
 .lica .clearfix {
@@ -8070,7 +8113,7 @@ h3.ico-map {
   }
   .nav-justified > .dropdown .menu-lvl2 .dropdown-submenu.open > .dropdown-menu li a {
     color: #808080;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 13px;
     padding-left: 65px;
     max-width: inherit;
@@ -8155,7 +8198,7 @@ h3.ico-map {
     color: #808080;
     font-size: 13px;
     text-transform: none;
-    font-weight: normal;
+    font-weight: 300;
     padding-left: 33px;
   }
   .dropdown.open .dropdown-menu .menu-lvl2 li a:hover, .dropdown.open .dropdown-menu .menu-lvl2 li a.active {
@@ -8184,9 +8227,12 @@ h3.ico-map {
     font-weight: bold;
   }
   .dropdown.open .dropdown-menu .menu-lvl2 .dropdown-submenu.open li a {
-    font-weight: normal;
+    font-weight: 300;
     color: #808080;
     padding-left: 43px;
+  }
+  .dropdown.open .dropdown-menu .menu-lvl2 .dropdown-submenu.open li a:hover {
+    color: #5F9863;
   }
 
   .dropdown.open .dropdown-menu .menu-lvl2 li.open a {
@@ -8281,7 +8327,7 @@ h3.ico-map {
   .dropdown-menu .menu-lvl2 li a {
     text-transform: none;
     color: #808080;
-    font-weight: normal;
+    font-weight: 300;
     padding: 0 20px 0 33px;
   }
   .dropdown-menu .menu-lvl2 li a:hover, .dropdown-menu .menu-lvl2 li a.active {
@@ -8368,24 +8414,41 @@ h3.ico-map {
   }
 }
 @font-face {
-  font-family: 'HelveticaNeueCyrBlack';
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 700;
   src: url("../fonts/helveticaneuecyr-black.eot");
-  src: url("../fonts/helveticaneuecyr-black.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-black.woff") format("woff"), url("../fonts/helveticaneuecyr-black.ttf") format("truetype"), url("../fonts/helveticaneuecyr-black.svg#HelveticaNeueCyrBlack") format("svg");
+  src: url("../fonts/helveticaneuecyr-black.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-black.woff") format("woff"), url("../fonts/helveticaneuecyr-black.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'HelveticaNeueCyrLightItalic';
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 100;
+  font-style: italic;
   src: url("../fonts/helveticaneuecyr-lightitalic.eot");
-  src: url("../fonts/helveticaneuecyr-lightitalic.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-lightitalic.woff") format("woff"), url("../fonts/helveticaneuecyr-lightitalic.ttf") format("truetype"), url("../fonts/helveticaneuecyr-lightitalic.svg#HelveticaNeueCyrLightItalic") format("svg");
+  src: url("../fonts/helveticaneuecyr-lightitalic.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-lightitalic.otf") format("opentype");
 }
 @font-face {
-  font-family: 'HelveticaNeueCyrRoman';
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 300;
   src: url("../fonts/helveticaneuecyr-roman.eot");
-  src: url("../fonts/helveticaneuecyr-roman.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-roman.woff") format("woff"), url("../fonts/helveticaneuecyr-roman.ttf") format("truetype"), url("../fonts/helveticaneuecyr-roman.svg#HelveticaNeueCyrRoman") format("svg");
+  src: url("../fonts/helveticaneuecyr-roman.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-roman.otf") format("opentype");
 }
 @font-face {
-  font-family: 'HelveticaNeueCyrMedium';
+  font-family: 'HelveticaNeueCyr';
+  font-weight: normal;
+  src: url("../fonts/helveticaneuecyr-roman.eot");
+  src: url("../fonts/helveticaneuecyr-roman.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-roman.otf") format("opentype");
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
   src: url("../fonts/helveticaneuecyr-medium.eot");
-  src: url("../fonts/helveticaneuecyr-medium.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-medium.woff") format("woff"), url("../fonts/helveticaneuecyr-medium.ttf") format("truetype"), url("../fonts/helveticaneuecyr-medium.svg#HelveticaNeueCyrMedium") format("svg");
+  src: url("../fonts/helveticaneuecyr-medium.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-medium.otf") format("opentype");
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: bold;
+  src: url("../fonts/helveticaneuecyr-bold.eot");
+  src: url("../fonts/helveticaneuecyr-bold.eot") format("embedded-opentype"), url("../fonts/helveticaneuecyr-bold.otf") format("opentype");
 }
 
 /*# sourceMappingURL=main.css.map */

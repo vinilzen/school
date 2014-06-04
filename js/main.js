@@ -2,8 +2,20 @@ $(function() {
 
 	$('.dropdown').on('shown.bs.dropdown', function () {
 		var w = $(this).width();
-		$('.dropdown-menu:first', this).css({ 'min-width':w });
+		if (w) $('.dropdown-menu', this).first().css({ 'min-width':w });
 	});
+
+	$(document).on('click',function(e){
+		if (document.body.clientWidth <= 1024) {
+			if($(e.target).closest('.navbar-collapse').length != 1 && $(e.target).closest('.navbar-toggle').length != 1){
+				$('.collapse').collapse('hide');
+			}
+		}
+	});
+
+	// $('body').click(function(){
+
+	// });
 
 	$('.dropdown-submenu').click(function(){
 		$(this).toggleClass('open');

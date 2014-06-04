@@ -30,9 +30,11 @@
 // Reset margins on headings for tighter default spacing
 .media-heading {
   margin: 0 0 5px;
-  font-family: "HelveticaNeueCyrMedium", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
   a {
-    font-family: "HelveticaNeueCyrMedium", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "HelveticaNeueCyr", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 500;
   }
 }
 

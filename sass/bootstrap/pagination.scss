@@ -25,7 +25,6 @@
     }
   }
   > li {
-
     display: inline-block;
     float: left;
     margin-right: 1px;
@@ -39,9 +38,7 @@
       color: #000;
       font-weight: bold;
       margin-left: -1px;
-      font-size: 16px;
-      font-family: "Myriad Pro", serif;
-      
+      font-size: 16px;      
       border-bottom-left-radius: 19px;
       border-bottom-right-radius: 19px;
       border-top-left-radius: 19px;
@@ -76,11 +73,18 @@
   > li > a.prev, > li > a.next {
     text-transform: uppercase;
     white-space: nowrap;
+    span {
+      top: -2px;
+      position: relative;
+    }
   }
 
   > li > a.next {
+    padding-top: 8px;
     margin-right: 0;
     padding-right: 0;
+    padding-left: 5px;
+    font-size: 13px;
     &:after {
       content: ' ';
       display: inline-block;
@@ -97,9 +101,12 @@
   }
 
   > li > a.prev {
+
+    padding-top: 8px;
     margin-right: 0;
-    padding-right: 0;
-    padding-right: 15px;
+    padding-right: 5px;
+    padding-left: 0;
+    font-size: 13px;
     &:before {
       content: ' ';
       margin-right: 10px;
