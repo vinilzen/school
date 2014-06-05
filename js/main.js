@@ -42,6 +42,8 @@ $(function() {
 			infinite: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
+			accessibility:false,
+			arrows:false
 			// autoplay:true,
 		});
 	}
