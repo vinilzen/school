@@ -36,7 +36,7 @@ $(function() {
 	});
 
 
-	if (document.body.clientWidth < 768) {
+	if (document.body.clientWidth < 768 && $('.slick').length ) {
 		$('.slick').slick({
 			dots: true,
 			infinite: true,
@@ -49,7 +49,7 @@ $(function() {
 	}
 
 	$(window).resize(function(){
-		if (document.body.clientWidth < 768) {
+		if (document.body.clientWidth < 768 && $('.slick').length ) {
 			$('.slick').slick({
 				dots: true,
 				infinite: true,
