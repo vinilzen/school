@@ -34,4 +34,30 @@ $(function() {
 
 		return false;
 	});
+
+
+	if (document.body.clientWidth < 768) {
+		$('.slick').slick({
+			dots: true,
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			// autoplay:true,
+		});
+	}
+
+	$(window).resize(function(){
+		if (document.body.clientWidth < 768) {
+			$('.slick').slick({
+				dots: true,
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay:true,
+			});
+		} else {
+			if ($('.slick-slider').length) $('.slick').unslick();
+		}
+	});
+
 });
