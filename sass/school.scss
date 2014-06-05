@@ -1444,6 +1444,7 @@ h3.ico-map {
 				width: 100%;
 				display: inline-block;
 				color:#808080;
+				white-space: nowrap;
 				font-size: 13px;
 				text-transform: none;
 				font-weight: 300;
@@ -1599,6 +1600,7 @@ h3.ico-map {
 			li {
 				a {
 					text-transform: none;
+					white-space: nowrap;
 					color:#808080;
 					font-weight: 300;
 					padding: 0 20px 0 33px;
