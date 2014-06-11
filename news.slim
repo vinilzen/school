@@ -1,0 +1,164 @@
+doctype html
+html
+  head
+    meta charset="utf-8" 
+    meta content="IE=edge" http-equiv="X-UA-Compatible" 
+    meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"
+    meta content="template language" name="keywords"
+    meta content="marchukilya@gmail.com" name="author"
+    meta content="" name="description"
+    link href="css/main.css" rel="stylesheet"
+    /[if IE]
+      link href="css/ie.css" rel="stylesheet" type="text/css"
+    link rel="shortcut icon" type="image/png" href="favicon.png"
+    title School - Главная
+  body
+    == Slim::Template.new("top-menu.slim").render
+
+    .container
+      .row
+        ol.breadcrumb
+          li
+            a href="#" Главная страница
+          li
+            a href="#" Начальная школа «Радуга»
+          li
+            a href="#" Образование
+          li
+            a href="#" Новости
+          li.activeData Пушкин ad libitum
+
+    .container
+      .row.row-bordered
+        .col-lg-3.visible-lg.col-bordered.left-sidebar
+          h2 О школе
+          hr
+          ul.nav.nav-pills.nav-stacked
+            li
+              a Миссия
+            li
+              a Лица
+              ul
+                li
+                  a Совет директоров
+                li
+                  a Администрация
+                li
+                  a Учителя
+                li
+                  a Кураторы
+                li
+                  a Службы сопровождения
+            li
+              a История школы
+            li
+              a Достижения школы
+            li
+              a Школьная жизнь
+              ul
+                li
+                  a.active Новости
+                li
+                  a СМИ школы
+                li
+                  a Страницы центров
+                  ul
+                    li
+                      a 1 центр
+                    li
+                      a 2 центр
+                    li
+                      a 3 центр
+                    li
+                      a 4 центр
+
+        .col-lg-9.col-xs-12.col-bordered
+          .typography
+            h1 Новости центра
+            hr
+            ul.news-list.media-list.news-rulon
+              li.media
+                a.pull-left
+                  img.media-object.img-responsive src="img/pic3.jpg"
+                .media-body
+                  p.date
+                    | 16 марта 2014
+                    span.label.label-default Средняя школа
+                  h4.media-heading 
+                    a Экскурсия в музей «Огни Москвы»
+                  p.txt
+                    | 11 апреля в Начальной школе состоялась не совсем обычная, Литературная Ассамблея. Ученики третьего и четвёртого 
+                    a href="" [...]
+              li.media
+                a.pull-left
+                  img.media-object.img-responsive src="img/pic2.jpg"
+                .media-body
+                  p.date
+                    | 16 марта 2014
+                    span.label.label-default Старшая школа
+                  h4.media-heading
+                    a href=""
+                      | У нас в гостях Марина Семеновна Аромштам
+                      i.camera-ico
+                  p.txt
+                    | 20 марта для детей, участников образовательной поездки в Англию, провела мастер-класс по журналистике мама Миши 
+                    a href="" [...]
+              li.media
+                a.pull-left
+                  img.media-object.img-responsive src="img/pic1.jpg"
+                .media-body
+                  p.date 16 марта 2014
+                  h4.media-heading
+                    a Мастер-класс по журналистике
+                  p.txt
+                    | 11 апреля в Начальной школе состоялась не совсем обычная, Литературная Ассамблея. Ученики третьего и четвёртого 
+                    a href="" [...]
+              li.media
+                a.pull-left
+                  img.media-object.img-responsive src="img/pic1.jpg"
+                .media-body
+                  p.date 16 марта 2014
+                  h4.media-heading
+                    a Мастер-класс по журналистике
+                  p.txt
+                    | 11 апреля в Начальной школе состоялась не совсем обычная, Литературная Ассамблея. Ученики третьего и четвёртого 
+                    a href="" [...]
+              li.media
+                a.pull-left
+                  img.media-object.img-responsive src="img/pic1.jpg"
+                .media-body
+                  p.date 16 марта 2014
+                  h4.media-heading
+                    a Мастер-класс по журналистике
+                  p.txt
+                    | 11 апреля в Начальной школе состоялась не совсем обычная, Литературная Ассамблея. Ученики третьего и четвёртого 
+                    a href="" [...]
+
+            hr
+            .pagination-container
+              ul.pagination.pull-right
+                li
+                  a.prev href="#"
+                    span.visible-lg предыдущая страница
+                li
+                  a href="#" 1
+                li
+                  a href="#" 2
+                li.active
+                  a href="#" 3
+                li
+                  a href="#" ...
+                li
+                  a href="#" 25
+                li
+                  a href="#" 26
+                li
+                  a.next href="#"
+                    span.visible-lg следующая страница 
+
+      == Slim::Template.new("ftr.slim").render
+
+
+    script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+    script src="js/bootstrap.min.js"
+    script src="js/main.js"

@@ -4,15 +4,19 @@
 
 .label {
   display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 1;
+  padding: 4px 8px 1px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
   color: $label-color;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: .25em;
+  border-radius: 2px;
+  position: relative;
+  top:-2px;
+  margin-left: 16px;
 
   // [converter] extracted a& to a.label
 

@@ -13,10 +13,6 @@ $(function() {
 		}
 	});
 
-	// $('body').click(function(){
-
-	// });
-
 	$('.dropdown-submenu').click(function(){
 		$(this).toggleClass('open');
 		return false;
@@ -43,8 +39,7 @@ $(function() {
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			accessibility:false,
-			arrows:false
-			// autoplay:true,
+			arrows:false,
 		});
 	}
 

@@ -14,6 +14,16 @@
          url('../fonts/helveticaneuecyr-black.ttf') format('truetype');
          // url('../fonts/helveticaneuecyr-black.svg#HelveticaNeueCyrBlack') format('svg');
 }
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 900;
+    src: url('../fonts/helveticaneuecyr-heavy.eot');
+    src: url('../fonts/helveticaneuecyr-heavy.eot') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-heavy.otf') format('opentype');
+         // url('../fonts/helveticaneuecyr-heavy.woff') format('woff'),
+         // url('../fonts/helveticaneuecyr-heavy.ttf') format('truetype');
+         // url('../fonts/helveticaneuecyr-heavy.svg#HelveticaNeueCyrHeavy') format('svg');
+}
 
 @font-face {
     font-family: 'HelveticaNeueCyr';

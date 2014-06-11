@@ -258,6 +258,7 @@
 .tel {
 	color:#141212;
 	font-size: 18px;
+	font-weight: bold;
 }
 .adress {
 	color:#141212;
@@ -300,6 +301,20 @@
 		font-size: 18px;
 		line-height: 1.45em;
 		padding-right: 10px;
+		font-weight: 900;
+		a {	
+			color:#2c2c2c;
+			font-size: 18px;
+			font-weight: 900;
+			line-height: 1.45em;
+			padding-right: 10px;
+			&:hover {
+				color:#5f9863;
+			}
+		}
+		&.media-heading {
+			margin-top: -4px;
+		}
 	}
 	a {
 		text-decoration: none;
@@ -839,7 +854,7 @@
 	}
 	h1 {
 		font-size: 40px;
-		font-weight: bold;
+		font-weight: 900;
 	}
 	h3 {
 		padding-bottom: 12px;
