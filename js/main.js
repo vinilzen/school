@@ -14,14 +14,7 @@ $(function() {
 	});
 
 	$('.dropdown-submenu a.dropdown-toggle').click(function(){
-		console.log(12)
 		$(this).closest( "li" ).toggleClass('open');
-		/*
-		if (document.body.clientWidth < 1024) {
-			return false;
-		} else {
-			return true;
-		}*/
 		return false;
 	});
 	
