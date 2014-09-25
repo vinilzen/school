@@ -57,8 +57,11 @@ $(function() {
 		}
 	});
 
-	$('.dropdown-menu-closed a:first').bind('hover click', function(e){
-		$(this).parent('.dropdown-menu-closed').toggleClass('op');
+	$('.dropdown-menu-closed').click(function(e){
+		$(this).toggleClass('op');
+		return false;
+	}).hover(function(e){
+		$(this).toggleClass('op');
 		return false;
 	});
 
