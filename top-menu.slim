@@ -67,8 +67,39 @@
                     li
                       a Социальный интеллект
 
-        li
-          a href="doc.html"  образование
+        li.dropdown#dropdownMenu2
+          a.dropdown-toggle data-toggle="dropdown" href="doc.html"
+          	| образование
+            span.caret
+		  ul.dropdown-menu role="menu" aria-labelledby="dropdownMenu2"
+            li
+              a href="new.html" О школе
+            li
+              a href="lic.html" Лица
+            li.dropdown-menu-closed
+              a href="doc.html"
+              	| Образование1
+              	span.caret
+              ul.menu-lvl2
+                li
+                  a Базовое образование
+                li
+                  a Школьная академия наук искусств и интересов (ШАНИиИ)
+                li
+                  a Специальные программы
+                li.dropdown-submenu
+                  a.dropdown-toggle id="dropdownMenu2" data-toggle="dropdown" href="#" Выездная школа
+                  ul.dropdown-menu role="menu" aria-labelledby="dropdownMenu2"
+                    li
+                      a href="kon.html" Жить здОрово - здорОво
+                    li
+                      a href="lic.html" Школьная академия наук искусств и интересов (ШАНИиИ)
+                    li
+                      a href="doc.html" Языковое образование
+                    li
+                      a Социальный интеллект
+            li
+              a href="new.html" Студии и лекции
         li
           a href="centr.html"  Школьная Жизнь
         li

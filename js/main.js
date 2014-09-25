@@ -57,4 +57,9 @@ $(function() {
 		}
 	});
 
+	$('.dropdown-menu-closed a:first').bind('hover click', function(e){
+		$(this).parent('.dropdown-menu-closed').toggleClass('op');
+		return false;
+	});
+
 });
